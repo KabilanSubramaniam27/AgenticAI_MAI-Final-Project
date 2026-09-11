@@ -1,0 +1,17 @@
+destinations:
+  - id: lisbon
+    title: Lisbon
+    country: PT
+    aliases: [Lisbon]
+  - id: paris
+    title: Paris
+    country: FR
+    aliases: [Paris]
+  - id: london
+    title: London
+    country: GB
+    aliases: [London]
+  - id: new_york_city
+    title: New York City
+    country: US
+    aliases: [New York City, New York, NYC]

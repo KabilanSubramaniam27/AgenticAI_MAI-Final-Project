@@ -1,0 +1,10 @@
+http_timeout_seconds: 30
+http_max_retries: 4
+http_interval_seconds: 1.0
+max_district_depth: 2
+max_district_pages: 40
+embedding_batch_size: 32
+chunk_target_tokens: 180
+chunk_overlap_tokens: 24
+chunk_max_input_tokens: 256
+chroma_collection: tripradar_destinations

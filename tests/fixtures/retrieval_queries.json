@@ -1,0 +1,18 @@
+[
+  {"destination":"lisbon","section":"get_in","query":"How can I take the metro from Lisbon airport?","expected":["metro"]},
+  {"destination":"lisbon","section":"see","query":"Visit the Tower of Belém and Jerónimos Monastery","expected":["Belém", "Jerónimos"]},
+  {"destination":"lisbon","section":"eat","query":"Do I have to pay for unrequested starters served at restaurants?","expected":["couvert", "unrequested"]},
+  {"destination":"lisbon","section":"sleep","query":"Where should I stay to avoid hill climbing near tram 28?","expected":["tram #28", "hill-climbing"]},
+  {"destination":"paris","section":"get_in","query":"Charles de Gaulle airport to central Paris on RER B","expected":["RER B"]},
+  {"destination":"paris","section":"see","query":"Where can I visit the Louvre art museum?","expected":["Louvre"]},
+  {"destination":"paris","section":"eat","query":"Is service included in the restaurant bill and should I tip?","expected":["service compris", "service charge", "tip"]},
+  {"destination":"paris","section":"sleep","query":"Budget hostels and inexpensive accommodation in Paris","expected":["hostel"]},
+  {"destination":"london","section":"get_in","query":"Heathrow airport to London by Piccadilly line","expected":["Piccadilly"]},
+  {"destination":"london","section":"see","query":"British Museum collections and admission","expected":["British Museum"]},
+  {"destination":"london","section":"eat","query":"Where is Brick Lane and can I get curry there?","expected":["Brick Lane"]},
+  {"destination":"london","section":"sleep","query":"Budget chain hotels Travelodge in London","expected":["Travelodge"]},
+  {"destination":"new_york_city","section":"get_in","query":"JFK airport AirTrain connections to the subway","expected":["AirTrain"]},
+  {"destination":"new_york_city","section":"see","query":"Metropolitan Museum of Art collections in Manhattan","expected":["Metropolitan Museum"]},
+  {"destination":"new_york_city","section":"eat","query":"Where to eat New York style bagels?","expected":["bagel"]},
+  {"destination":"new_york_city","section":"sleep","query":"Affordable hostels for a budget stay in New York City","expected":["hostel"]}
+]
