@@ -145,6 +145,22 @@ for _stage in ("collect", "parse", "normalize", "chunk", "embed", "index", "inge
 
 
 @app.command()
+def cloud_upload(dry_run: bool = False):
+    """Copy the active snapshot to Chroma Cloud, reusing stored embeddings."""
+    from .cloud import migrate_cloud
+
+    try:
+        output(migrate_cloud(dry_run=dry_run))
+    except ValueError as exc:
+        console.print(str(exc))
+        raise typer.Exit(1) from None
+    except Exception as exc:
+        # SDK exception messages can contain request information; omit those details.
+        console.print(f"Cloud upload failed ({type(exc).__name__}); check credentials/network.")
+        raise typer.Exit(1) from None
+
+
+@app.command()
 def stats():
     output(statistics(Settings.load()))
 

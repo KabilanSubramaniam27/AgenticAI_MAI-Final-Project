@@ -1,0 +1,41 @@
+{
+  "version": "1.0-draft",
+  "status": "pending_user_review",
+  "frozen": false,
+  "execution_status": "not_run",
+  "origin": "80 AI-authored synthetic scenarios; four real archived guide passages supplied as evidence; no live prices or forecasts",
+  "case_count": 80,
+  "counts_by_agent": {
+    "Orchestrator": 20,
+    "Itinerary-Builder": 20,
+    "Price-Watcher": 20,
+    "Weather-Risk-Agent": 20
+  },
+  "columns": [
+    "scenario",
+    "user_input",
+    "expected_behavior",
+    "success_criteria",
+    "tools_context",
+    "failure_edge_cases"
+  ],
+  "canonical_dataset": "Golden_Dataset_V1.csv",
+  "per_agent_files": {
+    "Orchestrator": "Golden_Dataset_V1_Orchestrator.csv",
+    "Itinerary-Builder": "Golden_Dataset_V1_Itinerary_Builder.csv",
+    "Price-Watcher": "Golden_Dataset_V1_Price_Watcher.csv",
+    "Weather-Risk-Agent": "Golden_Dataset_V1_Weather_Risk.csv"
+  },
+  "splits": "Unassigned review pool; no protected holdout exists; group related variants before splitting.",
+  "excluded_scope": "No separate E2E dataset yet; the requested scope is four agents (80 cases), not the plan's eventual 100 cases including 20 E2E.",
+  "artifacts_sha256": {
+    "Golden_Dataset_V1.csv": "44ec39d283dd120a6225be573ac18a6dde730adcc80bd5900a99e76cb39525fd",
+    "Golden_Dataset_V1_Itinerary_Builder.csv": "80746160c0fc02c91ec05014ac44dbf9ec09077a321bfcaba8c3cd6c5c2ba7c7",
+    "Golden_Dataset_V1_Orchestrator.csv": "70f60351e4ba5b44ba60ea4e70fa92dbcf57838dcb4cbe4e7fb565654e9c7098",
+    "Golden_Dataset_V1_Price_Watcher.csv": "d6512117585359f65a8c36efd5ccea78035e4bccc535394acdb1422a4ff5dbff",
+    "Golden_Dataset_V1_README.md": "359c525d900015caf350c8dd72775e9d85b932bb0a75d6b721a59de25783b42b",
+    "Golden_Dataset_V1_Weather_Risk.csv": "15ac48f9a9012a01dcae64dd8129c97ba7f13d343977ca05ae8a136e0d667a0a",
+    "Golden_Dataset_V1_case_details.json": "9dd62e01befd8703a5d6ce93f61929e68077eefc3454d470ab003f82bbaf83dc",
+    "fixtures/guides/passages.json": "6843c63512aa32ef6562d3c72b86de7bc0c1a58cb0ff5a0dac143b16b5bc9da9"
+  }
+}

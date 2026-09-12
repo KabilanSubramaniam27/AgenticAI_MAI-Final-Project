@@ -1,5 +1,7 @@
 # TripRadar destination ingestion
 
+To copy the existing local index into Chroma Cloud, see [Cloud upload setup](docs/chroma-cloud.md).
+
 Collect source-attributed English Wikivoyage guides for **Lisbon, Paris, London, and New York City**, including bounded district/borough guides. Preserve revision-pinned wikitext, extract listings and sections, normalize and chunk them, generate local MiniLM embeddings through Chroma, and publish a validated persistent Chroma index. LangSmith traces and local JSONL events show stage timings, counts, failures, cache reuse, and publication.
 
 This package implements the knowledge ingestion/retrieval layer. Agents, itinerary generation, live hotel/flight pricing, forecasts, and budget reconciliation remain future work. Portugal coverage is Lisbon and collected districts; guide prices are not live offers.
