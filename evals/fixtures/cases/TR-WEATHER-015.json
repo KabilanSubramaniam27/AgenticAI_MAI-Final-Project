@@ -1,0 +1,24 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-WEATHER-015",
+  "agent": "Weather-Risk-Agent",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-10-09T12:00:00Z",
+  "user_input": "Use a cached forecast after its allowed age has elapsed.",
+  "input_refs": {
+    "weather": "weather/TR-WEATHER-015.json",
+    "specialist_results": "specialist_results/TR-WEATHER-015.json",
+    "trip": "trips/TR-WEATHER-015.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "rain_conflicts": {
+      "A1": null
+    },
+    "error": "stale_forecast"
+  },
+  "expected_behavior": "Label stale evidence and withhold current verified risk if refresh fails.",
+  "success_criteria": "Current assessment unknown; stale values shown only as stale context if useful.",
+  "failure_edge_cases": "Treating a 48h-old response as meeting 24h policy."
+}

@@ -1,0 +1,23 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-ITIN-003",
+  "agent": "Itinerary-Builder",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-09-11T12:00:00Z",
+  "user_input": "Suggest a London district for the British Museum based on this guide.",
+  "input_refs": {
+    "guides": "guides/TR-ITIN-003.json",
+    "trip": "trips/TR-ITIN-003.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "unsupported_claims_allowed": false,
+    "required_evidence_aliases": [
+      "G-LON"
+    ]
+  },
+  "expected_behavior": "Use the district association in G-LON and cite the archived passage.",
+  "success_criteria": "British Museum linked to Bloomsbury when supported by exact G-LON text; no ticket or opening-time claim.",
+  "failure_edge_cases": "Using unrelated London district; invented accessibility information."
+}

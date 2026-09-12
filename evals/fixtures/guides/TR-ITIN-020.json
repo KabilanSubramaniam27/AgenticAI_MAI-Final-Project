@@ -1,0 +1,37 @@
+{
+  "status": "ok",
+  "archived_passages_file": "guides/passages.json",
+  "archived_passage_aliases": [],
+  "synthetic_passages": [
+    {
+      "id": "G-A",
+      "origin": "synthetic",
+      "destination_id": "lisbon",
+      "name": "Harbor Gallery",
+      "exposure": "indoor",
+      "text": "Harbor Gallery is a fictional indoor activity in lisbon, for tests only.",
+      "historical_opening_time": "09:00",
+      "effective_date": "2025-01-01"
+    },
+    {
+      "id": "G-A",
+      "origin": "synthetic",
+      "destination_id": "lisbon",
+      "name": "Harbor Gallery",
+      "exposure": "indoor",
+      "text": "Harbor Gallery is a fictional indoor activity in lisbon, for tests only.",
+      "historical_opening_time": "09:00",
+      "effective_date": "2025-01-01"
+    },
+    {
+      "id": "G-B",
+      "origin": "synthetic",
+      "destination_id": "lisbon",
+      "name": "Harbor Gallery",
+      "exposure": "indoor",
+      "text": "Harbor Gallery is a fictional indoor activity in lisbon, for tests only.",
+      "historical_opening_time": "10:00",
+      "effective_date": "2025-01-01"
+    }
+  ]
+}

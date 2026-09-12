@@ -1,0 +1,23 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-WEATHER-008",
+  "agent": "Weather-Risk-Agent",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-10-09T12:00:00Z",
+  "user_input": "The provider returned a date but null precipitation probability.",
+  "input_refs": {
+    "weather": "weather/TR-WEATHER-008.json",
+    "specialist_results": "specialist_results/TR-WEATHER-008.json",
+    "trip": "trips/TR-WEATHER-008.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "rain_conflicts": {
+      "A1": null
+    }
+  },
+  "expected_behavior": "Mark rain assessment unknown rather than no conflict.",
+  "success_criteria": "A1 rain conflict=null; missing precipitation field named; temperature 22 C may be retained.",
+  "failure_edge_cases": "Interpreting null as zero percent."
+}

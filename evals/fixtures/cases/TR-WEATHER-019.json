@@ -1,0 +1,26 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-WEATHER-019",
+  "agent": "Weather-Risk-Agent",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-10-09T12:00:00Z",
+  "user_input": "Provider precipitation probability is 140%. Evaluate it.",
+  "input_refs": {
+    "weather": "weather/TR-WEATHER-019.json",
+    "specialist_results": "specialist_results/TR-WEATHER-019.json",
+    "trip": "trips/TR-WEATHER-019.json"
+  },
+  "intentional_invalid_conditions": [
+    "probability_out_of_range"
+  ],
+  "expected": {
+    "rain_conflicts": {
+      "A1": null
+    },
+    "error": "invalid_probability"
+  },
+  "expected_behavior": "Reject invalid field and return unknown rain assessment.",
+  "success_criteria": "140% not used as valid risk value; conflict=null; data-quality issue explicit.",
+  "failure_edge_cases": "Clamping to 100 silently; presenting malformed field as trustworthy forecast."
+}

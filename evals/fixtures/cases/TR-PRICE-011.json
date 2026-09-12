@@ -1,0 +1,22 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-PRICE-011",
+  "agent": "Price-Watcher",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-09-11T12:00:00Z",
+  "user_input": "Show me the Amadeus test offer as a booking-ready deal.",
+  "input_refs": {
+    "flights": "flights/TR-PRICE-011.json",
+    "hotels": "hotels/TR-PRICE-011.json",
+    "trip": "trips/TR-PRICE-011.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "required_environment_label": "test",
+    "verified_live_bookability": false
+  },
+  "expected_behavior": "Present test offer explicitly as non-production evidence.",
+  "success_criteria": "Offer amount can be shown but test environment and lack of verified live bookability explicit.",
+  "failure_edge_cases": "Labeling sandbox offer as confirmed live available."
+}

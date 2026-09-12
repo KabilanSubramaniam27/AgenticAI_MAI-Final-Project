@@ -1,0 +1,13 @@
+{
+  "status": "ok",
+  "environment": "fixture",
+  "items": [
+    {
+      "id": "FX-EUR-USD",
+      "from": "EUR",
+      "to": "USD",
+      "rate": "1.10",
+      "rate_date": "2026-09-11"
+    }
+  ]
+}

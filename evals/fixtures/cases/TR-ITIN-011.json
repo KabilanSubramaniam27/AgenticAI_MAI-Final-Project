@@ -1,0 +1,21 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-ITIN-011",
+  "agent": "Itinerary-Builder",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-09-11T12:00:00Z",
+  "user_input": "My London flight leaves at 09:00 on October 19. Plan the final day.",
+  "input_refs": {
+    "guides": "guides/TR-ITIN-011.json",
+    "trip": "trips/TR-ITIN-011.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "unsupported_claims_allowed": false,
+    "no_sightseeing_after": "09:00"
+  },
+  "expected_behavior": "Keep final-day plans compatible with early departure; prioritize airport preparation rather than sightseeing.",
+  "success_criteria": "No city activity scheduled at or after departure; no unsupported fixed transfer duration.",
+  "failure_edge_cases": "Full museum day on flight-departure morning."
+}

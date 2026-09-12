@@ -1,0 +1,25 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-ORCH-006",
+  "agent": "Orchestrator",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-09-11T12:00:00Z",
+  "user_input": "Flights alone cost USD 2200 and my total budget is USD 2000. Hotel cost is unknown.",
+  "input_refs": {
+    "specialist_results": "specialist_results/TR-ORCH-006.json",
+    "currency": "currency/TR-ORCH-006.json",
+    "trip": "trips/TR-ORCH-006.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "known_subtotal": "2200.00",
+    "total": null,
+    "delta": null,
+    "fits_budget": false,
+    "budget_status": "over_budget"
+  },
+  "expected_behavior": "Explain that the known minimum already exceeds budget while final total remains unknown.",
+  "success_criteria": "known_subtotal=2200; budget_status=over_budget; fits_budget=false; total and delta null; excess lower bound at least USD 200 stated separately.",
+  "failure_edge_cases": "Returning fits; fabricating final total; presenting lower-bound excess as exact final delta."
+}

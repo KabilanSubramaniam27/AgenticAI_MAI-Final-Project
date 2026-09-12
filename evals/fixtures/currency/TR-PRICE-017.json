@@ -1,0 +1,8 @@
+{
+  "status": "unavailable",
+  "environment": "fixture",
+  "items": [],
+  "error": {
+    "code": "missing_rate"
+  }
+}

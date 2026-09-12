@@ -1,0 +1,23 @@
+{
+  "status": "ok",
+  "archived_passages_file": "guides/passages.json",
+  "archived_passage_aliases": [],
+  "synthetic_passages": [
+    {
+      "id": "G-SYN-1",
+      "origin": "synthetic",
+      "destination_id": "lisbon",
+      "name": "Riverside Walk",
+      "exposure": "outdoor",
+      "text": "Riverside Walk is a fictional outdoor activity in lisbon, for tests only."
+    },
+    {
+      "id": "G-SYN-2",
+      "origin": "synthetic",
+      "destination_id": "lisbon",
+      "name": "Harbor Gallery",
+      "exposure": "indoor",
+      "text": "Harbor Gallery is a fictional indoor activity in lisbon, for tests only."
+    }
+  ]
+}

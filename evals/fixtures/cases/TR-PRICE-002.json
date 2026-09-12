@@ -1,0 +1,22 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-PRICE-002",
+  "agent": "Price-Watcher",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-09-11T12:00:00Z",
+  "user_input": "Price flights for two adults, with one shared room.",
+  "input_refs": {
+    "flights": "flights/TR-PRICE-002.json",
+    "hotels": "hotels/TR-PRICE-002.json",
+    "trip": "trips/TR-PRICE-002.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "flight_total": "1200",
+    "currency": "USD"
+  },
+  "expected_behavior": "Preserve total-for-all-travelers basis.",
+  "success_criteria": "Offer F2 USD 1200 for both adults remains 1200, not 2400; per-person derived value=600 if shown.",
+  "failure_edge_cases": "Multiplying already aggregated fare again."
+}

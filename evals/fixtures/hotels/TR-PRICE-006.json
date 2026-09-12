@@ -1,0 +1,23 @@
+{
+  "status": "ok",
+  "environment": "fixture",
+  "items": [
+    {
+      "id": "H4",
+      "environment": "fixture",
+      "provider": "synthetic_edd",
+      "amount": "100",
+      "currency": "EUR",
+      "basis": "per_room_per_night",
+      "adults": 2,
+      "rooms": 2,
+      "taxes_included": true,
+      "mandatory_fees_included": true,
+      "fetched_at": "2026-09-11T12:00:00Z",
+      "expires_at": "2026-09-12T12:00:00Z",
+      "check_in": "2026-10-10",
+      "check_out": "2026-10-19",
+      "hotel_id": "H4"
+    }
+  ]
+}

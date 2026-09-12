@@ -1,0 +1,23 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-ITIN-001",
+  "agent": "Itinerary-Builder",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-09-11T12:00:00Z",
+  "user_input": "Suggest one Lisbon cycling activity from the supplied guide passage.",
+  "input_refs": {
+    "guides": "guides/TR-ITIN-001.json",
+    "trip": "trips/TR-ITIN-001.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "unsupported_claims_allowed": false,
+    "required_evidence_aliases": [
+      "G-LIS"
+    ]
+  },
+  "expected_behavior": "Recommend only the riverfront route supported by the passage and cite it.",
+  "success_criteria": "At least one supported riverfront route detail with G-LIS citation; no guaranteed current rental price or safety promise.",
+  "failure_edge_cases": "Treating old guide price as a current quote; unconditional safety assurance."
+}

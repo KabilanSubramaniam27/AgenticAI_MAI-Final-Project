@@ -1,0 +1,24 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-ORCH-015",
+  "agent": "Orchestrator",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-09-11T12:00:00Z",
+  "user_input": "My dates are fixed and every eligible complete option exceeds USD 2000.",
+  "input_refs": {
+    "specialist_results": "specialist_results/TR-ORCH-015.json",
+    "currency": "currency/TR-ORCH-015.json",
+    "trip": "trips/TR-ORCH-015.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "total": "2400",
+    "delta": "-400",
+    "fits_budget": false,
+    "dates_preserved": true
+  },
+  "expected_behavior": "Present the cheapest eligible over-budget option and explain limits without changing dates.",
+  "success_criteria": "Eligible minimum total=2400; delta=-400; no shortened trip selected; any date-change suggestion is only a proposal.",
+  "failure_edge_cases": "Nine-day plan silently substituted; pretending optional cuts guarantee affordability."
+}

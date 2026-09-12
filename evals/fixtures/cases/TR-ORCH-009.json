@@ -1,0 +1,23 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-ORCH-009",
+  "agent": "Orchestrator",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-09-11T12:00:00Z",
+  "user_input": "Plan Lisbon October 10-19, 2026, for one adult and one room, USD 2000 including flights.",
+  "input_refs": {
+    "specialist_results": "specialist_results/TR-ORCH-009.json",
+    "currency": "currency/TR-ORCH-009.json",
+    "trip": "trips/TR-ORCH-009.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "clarify": [
+      "origin"
+    ]
+  },
+  "expected_behavior": "Ask for departure origin before flight pricing; may offer a clearly unpriced draft.",
+  "success_criteria": "Origin requested; no assumed airport, fabricated flight or complete verdict.",
+  "failure_edge_cases": "Inferring origin from device timezone or nationality."
+}

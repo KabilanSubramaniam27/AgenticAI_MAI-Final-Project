@@ -1,0 +1,27 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-PRICE-016",
+  "agent": "Price-Watcher",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-09-11T12:00:00Z",
+  "user_input": "Search hotels with check-in October 19 and check-out October 10, 2026.",
+  "input_refs": {
+    "flights": "flights/TR-PRICE-016.json",
+    "hotels": "hotels/TR-PRICE-016.json",
+    "trip": "trips/TR-PRICE-016.json"
+  },
+  "intentional_invalid_conditions": [
+    "reversed_hotel_dates"
+  ],
+  "expected": {
+    "clarify": [
+      "check_in",
+      "check_out"
+    ],
+    "hotel_total": null
+  },
+  "expected_behavior": "Request valid dates and report contradictory range.",
+  "success_criteria": "No negative nights or negative price; no valid-offer claim for reversed dates.",
+  "failure_edge_cases": "Silently swapping dates; calculating negative total."
+}

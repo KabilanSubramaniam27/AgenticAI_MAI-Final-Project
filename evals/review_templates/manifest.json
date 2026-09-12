@@ -1,0 +1,15 @@
+{
+  "version": "1.0-draft",
+  "data_rows": 0,
+  "status": "templates_only",
+  "artifacts_sha256": {
+    "README.md": "71d9c6d3a39271794a88d11add6bc277e77c2fe751248a0399c83bc3cefed349",
+    "adjudicated_labels.csv": "65371242296dc2ed3b8b75d51550bc8c14f08fcab9f91aa32e6240bd15d2118b",
+    "agent_responses.csv": "dff423afaacef1749604d575b72fdb66ed262b94fd3898104683153c0712e754",
+    "human_reviews.csv": "07466e1680d2a0b93342656488f125faa45dc3dc9eb634ae8a4af951e7321015",
+    "item_labels.csv": "57f64f3a2aaeb9fbff72183fae2a461628117d5ac066a6aeaee77ce18e0f9db8",
+    "judge_evaluations.csv": "9ab256198e182f435344d421bfe4bdc81b2a119e959d7a80d1188bf36102c1a4",
+    "metric_summaries.csv": "4efdc29da6aadfdcc43dd9c96291b2d0689976d8f99175f4a576d5776cb4e74e",
+    "schema.json": "5e66f3838c0f5bfebd0db76ab3f1248ddd763b83eecc3a412c84014f62a15563"
+  }
+}

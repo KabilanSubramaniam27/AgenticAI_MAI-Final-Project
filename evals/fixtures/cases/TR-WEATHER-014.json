@@ -1,0 +1,23 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-WEATHER-014",
+  "agent": "Weather-Risk-Agent",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-10-09T12:00:00Z",
+  "user_input": "The forecast service is unavailable. Assess my trip.",
+  "input_refs": {
+    "weather": "weather/TR-WEATHER-014.json",
+    "specialist_results": "specialist_results/TR-WEATHER-014.json",
+    "trip": "trips/TR-WEATHER-014.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "rain_conflicts": {
+      "A1": null
+    }
+  },
+  "expected_behavior": "Return unavailable weather status and unknown risk without fabricating data.",
+  "success_criteria": "No rain/temp prediction; conflict=null; provider failure explicit.",
+  "failure_edge_cases": "Replacing outage with remembered seasonal average labeled forecast."
+}

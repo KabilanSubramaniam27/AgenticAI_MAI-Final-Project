@@ -1,0 +1,43 @@
+{
+  "status": "ok",
+  "environment": "fixture",
+  "items": [
+    {
+      "id": "H-UNKNOWN",
+      "environment": "fixture",
+      "provider": "synthetic_edd",
+      "amount": "800",
+      "currency": "EUR",
+      "basis": "whole_stay",
+      "adults": 1,
+      "rooms": 1,
+      "taxes_included": true,
+      "mandatory_fees_included": true,
+      "fetched_at": "2026-09-11T12:00:00Z",
+      "expires_at": "2026-09-12T12:00:00Z",
+      "check_in": "2026-10-10",
+      "check_out": "2026-10-19",
+      "hotel_id": "H-UNKNOWN",
+      "refundable": null
+    },
+    {
+      "id": "H-REF",
+      "environment": "fixture",
+      "provider": "synthetic_edd",
+      "amount": "950",
+      "currency": "EUR",
+      "basis": "whole_stay",
+      "adults": 1,
+      "rooms": 1,
+      "taxes_included": true,
+      "mandatory_fees_included": true,
+      "fetched_at": "2026-09-11T12:00:00Z",
+      "expires_at": "2026-09-12T12:00:00Z",
+      "check_in": "2026-10-10",
+      "check_out": "2026-10-19",
+      "hotel_id": "H-REF",
+      "refundable": true,
+      "free_cancellation_until": "2026-10-01T12:00:00Z"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "forecast": {
+    "id": "F-W-18",
+    "environment": "fixture",
+    "status": "ok",
+    "kind": "forecast",
+    "location": {
+      "destination_id": "lisbon",
+      "latitude": 38.72,
+      "longitude": -9.14,
+      "timezone": "Europe/Lisbon"
+    },
+    "fetched_at": "2026-10-09T12:00:00Z",
+    "daily": [
+      {
+        "date": "2026-10-10",
+        "precipitation_probability": 20,
+        "temperature_max_c": 36
+      }
+    ]
+  },
+  "policy": {
+    "rain_probability_threshold": 60,
+    "rain_operator": ">=",
+    "applies_to": "rain_sensitive_outdoor",
+    "max_age_hours": 24,
+    "heat_threshold_c": 35
+  }
+}

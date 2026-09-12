@@ -1,0 +1,23 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-ITIN-004",
+  "agent": "Itinerary-Builder",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-09-11T12:00:00Z",
+  "user_input": "How could I reach the Metropolitan Museum using the supplied subway guidance?",
+  "input_refs": {
+    "guides": "guides/TR-ITIN-004.json",
+    "trip": "trips/TR-ITIN-004.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "unsupported_claims_allowed": false,
+    "required_evidence_aliases": [
+      "G-NYC"
+    ]
+  },
+  "expected_behavior": "Summarize only the archived route/station options and flag that current service is unverified.",
+  "success_criteria": "Names a route/station combination supported by G-NYC; cites G-NYC; no current disruption-free guarantee.",
+  "failure_edge_cases": "Combining unrelated train/station options; claiming live transit confirmation."
+}

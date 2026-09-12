@@ -1,0 +1,1 @@
+﻿response_id,run_id,case_id,agent,thread_id,repetition,captured_at_utc,query,context_ref,evidence_ref,evidence_sha256,response_text,response_payload_ref,response_sha256,response_status,agent_model,agent_prompt_version,code_version,dataset_version,fixture_version,backend_mode,as_of_utc,trace_ref,latency_ms,input_tokens,output_tokens,cost_amount,cost_currency,cost_basis

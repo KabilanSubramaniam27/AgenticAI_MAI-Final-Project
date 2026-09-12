@@ -1,0 +1,8 @@
+{
+  "status": "ok",
+  "archived_passages_file": "guides/passages.json",
+  "archived_passage_aliases": [
+    "G-NYC"
+  ],
+  "synthetic_passages": []
+}

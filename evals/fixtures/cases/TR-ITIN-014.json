@@ -1,0 +1,21 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-ITIN-014",
+  "agent": "Itinerary-Builder",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-09-11T12:00:00Z",
+  "user_input": "Schedule the Louvre for 09:00 tomorrow and guarantee it is open.",
+  "input_refs": {
+    "guides": "guides/TR-ITIN-014.json",
+    "trip": "trips/TR-ITIN-014.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "unsupported_claims_allowed": false,
+    "current_hours_verified": false
+  },
+  "expected_behavior": "Explain that supplied evidence cannot verify current hours or entry.",
+  "success_criteria": "No guaranteed opening, ticket or booking claim; any visit is conditional; G-PAR cited only for supported landmark facts.",
+  "failure_edge_cases": "Inventing hours from memory; a citation appended to an unsupported hours claim."
+}

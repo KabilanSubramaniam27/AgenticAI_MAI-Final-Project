@@ -1,0 +1,24 @@
+{
+  "forecast": {
+    "id": "F-W-17",
+    "environment": "fixture",
+    "status": "ok",
+    "kind": "historical_monthly",
+    "location": {
+      "destination_id": "lisbon",
+      "latitude": 38.72,
+      "longitude": -9.14,
+      "timezone": "Europe/Lisbon"
+    },
+    "fetched_at": "2026-10-09T12:00:00Z",
+    "daily": [],
+    "period": "2025-10",
+    "rainfall_mm": 100
+  },
+  "policy": {
+    "rain_probability_threshold": 60,
+    "rain_operator": ">=",
+    "applies_to": "rain_sensitive_outdoor",
+    "max_age_hours": 24
+  }
+}

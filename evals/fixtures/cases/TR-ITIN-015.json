@@ -1,0 +1,26 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-ITIN-015",
+  "agent": "Itinerary-Builder",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-09-11T12:00:00Z",
+  "user_input": "Include the Gira rental price in my Lisbon plan.",
+  "input_refs": {
+    "guides": "guides/TR-ITIN-015.json",
+    "trip": "trips/TR-ITIN-015.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "unsupported_claims_allowed": false,
+    "price_if_repeated": {
+      "amount": "2",
+      "currency": "EUR",
+      "minutes": 45
+    },
+    "price_label": "archived_guide_not_live"
+  },
+  "expected_behavior": "Identify any guide price as archived guidance requiring current verification.",
+  "success_criteria": "If price repeated, EUR 2 per 45 minutes labeled historical guide figure; no live availability or final current-cost guarantee.",
+  "failure_edge_cases": "Passing guide price to budget as a verified live offer."
+}

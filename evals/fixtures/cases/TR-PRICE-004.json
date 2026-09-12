@@ -1,0 +1,23 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-PRICE-004",
+  "agent": "Price-Watcher",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-09-11T12:00:00Z",
+  "user_input": "Calculate the hotel cost at EUR 100 per room per night.",
+  "input_refs": {
+    "flights": "flights/TR-PRICE-004.json",
+    "hotels": "hotels/TR-PRICE-004.json",
+    "trip": "trips/TR-PRICE-004.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "hotel_total": "900",
+    "currency": "EUR",
+    "nights": 9
+  },
+  "expected_behavior": "Multiply by nine nights and one room with stated fee scope.",
+  "success_criteria": "Hotel total=EUR 900; nights=9; rooms=1.",
+  "failure_edge_cases": "Ten nights from inclusive itinerary dates."
+}

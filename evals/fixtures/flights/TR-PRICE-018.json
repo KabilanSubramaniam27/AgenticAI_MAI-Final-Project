@@ -1,0 +1,29 @@
+{
+  "status": "ok",
+  "environment": "fixture",
+  "items": [
+    {
+      "id": "F-BAG",
+      "environment": "fixture",
+      "provider": "synthetic_edd",
+      "amount": "600",
+      "currency": "USD",
+      "basis": "whole_party_round_trip",
+      "adults": 1,
+      "rooms": 1,
+      "taxes_included": true,
+      "mandatory_fees_included": true,
+      "fetched_at": "2026-09-11T12:00:00Z",
+      "expires_at": "2026-09-12T12:00:00Z",
+      "origin": "JFK",
+      "destination": "LIS",
+      "outbound_date": "2026-10-09",
+      "arrival_date": "2026-10-10",
+      "return_date": "2026-10-19",
+      "stops": 0,
+      "arrival_time": "16:00",
+      "checked_bag_included": false,
+      "checked_bag_fee": null
+    }
+  ]
+}

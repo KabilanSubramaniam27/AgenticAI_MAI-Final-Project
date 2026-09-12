@@ -1,0 +1,24 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-PRICE-017",
+  "agent": "Price-Watcher",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-09-11T12:00:00Z",
+  "user_input": "Compare a USD 600 flight with a EUR 900 hotel without a supplied FX rate.",
+  "input_refs": {
+    "currency": "currency/TR-PRICE-017.json",
+    "flights": "flights/TR-PRICE-017.json",
+    "hotels": "hotels/TR-PRICE-017.json",
+    "trip": "trips/TR-PRICE-017.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "flight_currency": "USD",
+    "hotel_currency": "EUR",
+    "combined_total": null
+  },
+  "expected_behavior": "Return each amount with currency and leave cross-currency aggregation unresolved.",
+  "success_criteria": "Flight USD 600; hotel EUR 900; no combined numeric total in one currency.",
+  "failure_edge_cases": "Adding to 1500 USD or inventing rate."
+}

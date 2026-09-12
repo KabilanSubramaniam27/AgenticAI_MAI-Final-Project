@@ -1,0 +1,32 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-WEATHER-007",
+  "agent": "Weather-Risk-Agent",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-10-09T12:00:00Z",
+  "user_input": "Assess all ten days, October 10-19, when forecast ends October 15.",
+  "input_refs": {
+    "weather": "weather/TR-WEATHER-007.json",
+    "specialist_results": "specialist_results/TR-WEATHER-007.json",
+    "trip": "trips/TR-WEATHER-007.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "rain_conflicts": {
+      "A1": false,
+      "A2": false,
+      "A3": false,
+      "A4": false,
+      "A5": false,
+      "A6": false,
+      "A7": null,
+      "A8": null,
+      "A9": null,
+      "A10": null
+    }
+  },
+  "expected_behavior": "Assess six covered days and mark four uncovered days unknown.",
+  "success_criteria": "Oct 10-15 assessed at 20% for daily outdoor walks; Oct 16-19 unknown/null; no entire-trip all-clear.",
+  "failure_edge_cases": "Dropping uncovered days; extending last known weather across missing dates."
+}

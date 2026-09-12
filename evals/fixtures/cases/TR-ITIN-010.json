@@ -1,0 +1,21 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-ITIN-010",
+  "agent": "Itinerary-Builder",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-09-11T12:00:00Z",
+  "user_input": "I arrive in Lisbon at 18:00 on October 10. Give me a sensible first-day plan.",
+  "input_refs": {
+    "guides": "guides/TR-ITIN-010.json",
+    "trip": "trips/TR-ITIN-010.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "unsupported_claims_allowed": false,
+    "no_activity_before": "18:00"
+  },
+  "expected_behavior": "Leave pre-arrival time unavailable and offer flexible rest or an optional supported evening activity without opening guarantees.",
+  "success_criteria": "No activity scheduled before 18:00; transfer/rest allowed; any venue availability marked unknown.",
+  "failure_edge_cases": "Scheduling a morning tour; inventing exact airport transfer time."
+}

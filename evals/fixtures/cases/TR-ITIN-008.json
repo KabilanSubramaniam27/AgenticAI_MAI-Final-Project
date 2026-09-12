@@ -1,0 +1,21 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-ITIN-008",
+  "agent": "Itinerary-Builder",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-09-11T12:00:00Z",
+  "user_input": "Build an itinerary for Athens.",
+  "input_refs": {
+    "guides": "guides/TR-ITIN-008.json",
+    "trip": "trips/TR-ITIN-008.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "unsupported_claims_allowed": false,
+    "evidence_gap_required": true
+  },
+  "expected_behavior": "Explain current coverage and ask whether a supported city is wanted.",
+  "success_criteria": "Athens coverage unavailable; no fabricated Athens plan or automatic substitution.",
+  "failure_edge_cases": "Using Lisbon as a substitute without consent."
+}

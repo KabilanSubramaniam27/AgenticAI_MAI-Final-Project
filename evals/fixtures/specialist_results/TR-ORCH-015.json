@@ -1,0 +1,16 @@
+{
+  "complete_options": [
+    {
+      "id": "OPTION-1",
+      "total": "2400",
+      "currency": "USD",
+      "eligible": true
+    },
+    {
+      "id": "OPTION-2",
+      "total": "2600",
+      "currency": "USD",
+      "eligible": true
+    }
+  ]
+}

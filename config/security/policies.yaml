@@ -1,0 +1,13 @@
+version: vertical-slice-v1
+scope: planning-only
+rules:
+  - id: input-boundary
+    enforcement: schema, size, session ownership, secret redaction, no user configuration
+  - id: tool-boundary
+    enforcement: agent allowlist, application-bound arguments, no filesystem or shell tools
+  - id: evidence-boundary
+    enforcement: source ID, destination, date, exact quote, semantic support before delivery
+  - id: money-boundary
+    enforcement: server evidence only; unresolved components yield unknown
+  - id: bounded-execution
+    enforcement: shared model/read/token/cost/deadline caps; no automatic repairs in this slice

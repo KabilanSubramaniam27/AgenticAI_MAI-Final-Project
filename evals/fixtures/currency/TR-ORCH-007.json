@@ -1,0 +1,9 @@
+{
+  "status": "unavailable",
+  "environment": "fixture",
+  "items": [],
+  "error": {
+    "code": "timeout",
+    "cached_rate_available": false
+  }
+}

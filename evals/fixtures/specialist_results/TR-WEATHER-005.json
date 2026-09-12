@@ -1,0 +1,15 @@
+{
+  "itinerary": {
+    "version": 1,
+    "activities": [
+      {
+        "id": "B1",
+        "date": "2026-10-10",
+        "name": "Fictional Harbor Gallery",
+        "exposure": "indoor",
+        "rain_sensitive": true,
+        "heat_sensitive": false
+      }
+    ]
+  }
+}

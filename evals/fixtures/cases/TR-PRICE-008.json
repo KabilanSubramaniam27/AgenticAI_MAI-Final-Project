@@ -1,0 +1,23 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-PRICE-008",
+  "agent": "Price-Watcher",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-09-11T12:00:00Z",
+  "user_input": "The hotel says EUR 936 including city tax. Confirm the total.",
+  "input_refs": {
+    "flights": "flights/TR-PRICE-008.json",
+    "hotels": "hotels/TR-PRICE-008.json",
+    "trip": "trips/TR-PRICE-008.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "hotel_total": "936",
+    "currency": "EUR",
+    "nights": 9
+  },
+  "expected_behavior": "Preserve included tax without adding it again.",
+  "success_criteria": "Final hotel total=EUR 936; tax not counted twice.",
+  "failure_edge_cases": "Returning 972 due to duplicate tax addition."
+}

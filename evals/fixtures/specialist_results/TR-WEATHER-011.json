@@ -1,0 +1,17 @@
+{
+  "itinerary": {
+    "version": 1,
+    "activities": [
+      {
+        "id": "A1",
+        "date": "2026-10-10",
+        "name": "Fictional walk",
+        "exposure": "outdoor",
+        "rain_sensitive": true,
+        "heat_sensitive": false,
+        "local_start": "2026-10-10T23:30:00-04:00",
+        "utc_start": "2026-10-11T03:30:00Z"
+      }
+    ]
+  }
+}

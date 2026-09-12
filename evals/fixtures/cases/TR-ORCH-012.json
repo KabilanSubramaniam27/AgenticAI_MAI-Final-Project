@@ -1,0 +1,26 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-ORCH-012",
+  "agent": "Orchestrator",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-09-11T12:00:00Z",
+  "user_input": "Move the trip to November 10-19, 2026, keeping everything else.",
+  "input_refs": {
+    "specialist_results": "specialist_results/TR-ORCH-012.json",
+    "currency": "currency/TR-ORCH-012.json",
+    "trip": "trips/TR-ORCH-012.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "invalidate": [
+      "prices",
+      "weather"
+    ],
+    "day_count": 10,
+    "hotel_nights": 9
+  },
+  "expected_behavior": "Apply new dates and report that date-dependent offers/weather need refreshing.",
+  "success_criteria": "Ten November days and nine hotel nights; old October quotes/forecasts not represented as current.",
+  "failure_edge_cases": "Retaining October totals as verified November prices."
+}

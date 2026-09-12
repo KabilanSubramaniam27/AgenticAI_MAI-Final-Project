@@ -1,0 +1,87 @@
+{
+  "itinerary": {
+    "version": 1,
+    "activities": [
+      {
+        "id": "A1",
+        "date": "2026-10-10",
+        "name": "Fictional walk",
+        "exposure": "outdoor",
+        "rain_sensitive": true,
+        "heat_sensitive": false
+      },
+      {
+        "id": "A2",
+        "date": "2026-10-11",
+        "name": "Fictional walk",
+        "exposure": "outdoor",
+        "rain_sensitive": true,
+        "heat_sensitive": false
+      },
+      {
+        "id": "A3",
+        "date": "2026-10-12",
+        "name": "Fictional walk",
+        "exposure": "outdoor",
+        "rain_sensitive": true,
+        "heat_sensitive": false
+      },
+      {
+        "id": "A4",
+        "date": "2026-10-13",
+        "name": "Fictional walk",
+        "exposure": "outdoor",
+        "rain_sensitive": true,
+        "heat_sensitive": false
+      },
+      {
+        "id": "A5",
+        "date": "2026-10-14",
+        "name": "Fictional walk",
+        "exposure": "outdoor",
+        "rain_sensitive": true,
+        "heat_sensitive": false
+      },
+      {
+        "id": "A6",
+        "date": "2026-10-15",
+        "name": "Fictional walk",
+        "exposure": "outdoor",
+        "rain_sensitive": true,
+        "heat_sensitive": false
+      },
+      {
+        "id": "A7",
+        "date": "2026-10-16",
+        "name": "Fictional walk",
+        "exposure": "outdoor",
+        "rain_sensitive": true,
+        "heat_sensitive": false
+      },
+      {
+        "id": "A8",
+        "date": "2026-10-17",
+        "name": "Fictional walk",
+        "exposure": "outdoor",
+        "rain_sensitive": true,
+        "heat_sensitive": false
+      },
+      {
+        "id": "A9",
+        "date": "2026-10-18",
+        "name": "Fictional walk",
+        "exposure": "outdoor",
+        "rain_sensitive": true,
+        "heat_sensitive": false
+      },
+      {
+        "id": "A10",
+        "date": "2026-10-19",
+        "name": "Fictional walk",
+        "exposure": "outdoor",
+        "rain_sensitive": true,
+        "heat_sensitive": false
+      }
+    ]
+  }
+}

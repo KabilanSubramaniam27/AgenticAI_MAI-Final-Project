@@ -1,0 +1,24 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-WEATHER-017",
+  "agent": "Weather-Risk-Agent",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-10-09T12:00:00Z",
+  "user_input": "Use last year's October weather to tell me whether it will rain on my trip.",
+  "input_refs": {
+    "weather": "weather/TR-WEATHER-017.json",
+    "specialist_results": "specialist_results/TR-WEATHER-017.json",
+    "trip": "trips/TR-WEATHER-017.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "rain_conflicts": {
+      "A1": null
+    },
+    "current_forecast_available": false
+  },
+  "expected_behavior": "Explain historical context cannot establish a date-specific forecast.",
+  "success_criteria": "No daily 2026 rain probability inferred; historical year/source label retained; current risk unknown.",
+  "failure_edge_cases": "100mm converted to 100% chance; historical observation called forecast."
+}

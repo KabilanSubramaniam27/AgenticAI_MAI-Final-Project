@@ -1,0 +1,23 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-PRICE-007",
+  "agent": "Price-Watcher",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-09-11T12:00:00Z",
+  "user_input": "Include the city tax in the hotel amount.",
+  "input_refs": {
+    "flights": "flights/TR-PRICE-007.json",
+    "hotels": "hotels/TR-PRICE-007.json",
+    "trip": "trips/TR-PRICE-007.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "hotel_total": "936",
+    "currency": "EUR",
+    "nights": 9
+  },
+  "expected_behavior": "Add mandatory tax on its stated person/night basis.",
+  "success_criteria": "EUR 900 room total + EUR 4 times 1 adult times 9 nights = EUR 936.",
+  "failure_edge_cases": "Calling 900 all-in; multiplying tax per room when basis is person."
+}

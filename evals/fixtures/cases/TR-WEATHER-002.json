@@ -1,0 +1,23 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-WEATHER-002",
+  "agent": "Weather-Risk-Agent",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-10-09T12:00:00Z",
+  "user_input": "Assess my outdoor walk when rain probability is 80%.",
+  "input_refs": {
+    "weather": "weather/TR-WEATHER-002.json",
+    "specialist_results": "specialist_results/TR-WEATHER-002.json",
+    "trip": "trips/TR-WEATHER-002.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "rain_conflicts": {
+      "A1": true
+    }
+  },
+  "expected_behavior": "Flag a rain conflict for the matching activity/date and request an evidenced alternative.",
+  "success_criteria": "A1 conflict=true; reason includes 80% versus 60% policy; no replacement venue invented.",
+  "failure_edge_cases": "Ignoring outdoor exposure; inventing an indoor museum."
+}

@@ -1,0 +1,33 @@
+{
+  "forecast": {
+    "id": "F-W-11",
+    "environment": "fixture",
+    "status": "ok",
+    "kind": "forecast",
+    "location": {
+      "destination_id": "new_york_city",
+      "latitude": 40.71,
+      "longitude": -74.01,
+      "timezone": "America/New_York"
+    },
+    "fetched_at": "2026-10-09T12:00:00Z",
+    "daily": [
+      {
+        "date": "2026-10-10",
+        "precipitation_probability": 80,
+        "temperature_max_c": 22
+      },
+      {
+        "date": "2026-10-11",
+        "precipitation_probability": 10,
+        "temperature_max_c": 22
+      }
+    ]
+  },
+  "policy": {
+    "rain_probability_threshold": 60,
+    "rain_operator": ">=",
+    "applies_to": "rain_sensitive_outdoor",
+    "max_age_hours": 24
+  }
+}

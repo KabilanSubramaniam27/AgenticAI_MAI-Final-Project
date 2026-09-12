@@ -1,0 +1,25 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-ORCH-017",
+  "agent": "Orchestrator",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-09-11T12:00:00Z",
+  "user_input": "Use the revised indoor activity after rain was flagged on day 2.",
+  "input_refs": {
+    "specialist_results": "specialist_results/TR-ORCH-017.json",
+    "currency": "currency/TR-ORCH-017.json",
+    "trip": "trips/TR-ORCH-017.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "itinerary_version": 2,
+    "replacement_activity_id": "B2",
+    "changed_dates": [
+      "2026-10-11"
+    ]
+  },
+  "expected_behavior": "Present the supported replacement and matching weather assessment while preserving other days.",
+  "success_criteria": "Day-2 outdoor A2 replaced by evidenced indoor B2; latest itinerary version used; original day-2 conflict explained; unresolved risks retained.",
+  "failure_edge_cases": "Mixing v1 activity with v2 weather status; inventing replacement opening hours."
+}

@@ -1,0 +1,24 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-ORCH-014",
+  "agent": "Orchestrator",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-09-11T12:00:00Z",
+  "user_input": "Show me what you can plan even though the pricing service is down.",
+  "input_refs": {
+    "specialist_results": "specialist_results/TR-ORCH-014.json",
+    "currency": "currency/TR-ORCH-014.json",
+    "trip": "trips/TR-ORCH-014.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "status": "partial",
+    "total": null,
+    "delta": null,
+    "fits_budget": null
+  },
+  "expected_behavior": "Return available grounded itinerary with explicit missing pricing and incomplete verdict.",
+  "success_criteria": "No fabricated prices; response marked partial; total/delta/fit unknown; available weather limitations preserved.",
+  "failure_edge_cases": "Calling outage no offers; complete or live-checked claim."
+}

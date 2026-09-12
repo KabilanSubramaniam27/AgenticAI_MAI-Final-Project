@@ -1,0 +1,23 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-ORCH-013",
+  "agent": "Orchestrator",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-09-11T12:00:00Z",
+  "user_input": "Increase my budget from USD 2000 to USD 2500; nothing else changes.",
+  "input_refs": {
+    "specialist_results": "specialist_results/TR-ORCH-013.json",
+    "currency": "currency/TR-ORCH-013.json",
+    "trip": "trips/TR-ORCH-013.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "total": "2300.00",
+    "delta": "200.00",
+    "fits_budget": true
+  },
+  "expected_behavior": "Reconcile still-valid evidence against the new budget.",
+  "success_criteria": "Unchanged eligible all-in total=2300; delta=200; fit conditional on accepted estimates; trip constraints preserved.",
+  "failure_edge_cases": "Changing itinerary dates; silently discarding still-valid offer scope."
+}

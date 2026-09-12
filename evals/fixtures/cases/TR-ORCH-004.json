@@ -1,0 +1,24 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-ORCH-004",
+  "agent": "Orchestrator",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-09-11T12:00:00Z",
+  "user_input": "Keep my dates and find a way to reduce the quoted USD 2300 total below USD 2000.",
+  "input_refs": {
+    "specialist_results": "specialist_results/TR-ORCH-004.json",
+    "currency": "currency/TR-ORCH-004.json",
+    "trip": "trips/TR-ORCH-004.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "initial_total": "2300.00",
+    "selected_hotel_id": "H2",
+    "total": "1950.00",
+    "delta": "50.00"
+  },
+  "expected_behavior": "Present the supported cheaper hotel option and recompute the complete ledger.",
+  "success_criteria": "Original total=2300; replacing hotel 1200 with eligible 850 yields total=1950 and delta=50; preserve dates, room count and requirements.",
+  "failure_edge_cases": "Invented discount; removing nights; selecting a hotel that fails required constraints."
+}

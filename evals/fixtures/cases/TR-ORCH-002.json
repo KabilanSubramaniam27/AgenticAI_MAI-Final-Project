@@ -1,0 +1,26 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-ORCH-002",
+  "agent": "Orchestrator",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-09-11T12:00:00Z",
+  "user_input": "Use my resolved Lisbon trip and reconcile the supplied itinerary and costs.",
+  "input_refs": {
+    "specialist_results": "specialist_results/TR-ORCH-002.json",
+    "currency": "currency/TR-ORCH-002.json",
+    "trip": "trips/TR-ORCH-002.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "total": "1975.00",
+    "delta": "25.00",
+    "fits_budget": true,
+    "verdict_basis": "mixed_estimates",
+    "day_count": 10,
+    "hotel_nights": 9
+  },
+  "expected_behavior": "Return 10 dated days, 9 hotel nights, cited supplied recommendations and a conditional affordable verdict.",
+  "success_criteria": "Flight USD 600 + EUR 1250 at 1.10 USD/EUR = USD 1975; delta=25; fits_budget=true; mixed estimates and fixture basis explicit.",
+  "failure_edge_cases": "Multiplying hotel total by nights; claiming fixture prices are live; claiming weather checked for October."
+}

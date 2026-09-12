@@ -1,0 +1,23 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-WEATHER-012",
+  "agent": "Weather-Risk-Agent",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-10-09T12:00:00Z",
+  "user_input": "Assess an activity labeled only City Experience.",
+  "input_refs": {
+    "weather": "weather/TR-WEATHER-012.json",
+    "specialist_results": "specialist_results/TR-WEATHER-012.json",
+    "trip": "trips/TR-WEATHER-012.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "rain_conflicts": {
+      "A-UNKNOWN": null
+    }
+  },
+  "expected_behavior": "Ask for exposure details or return activity-specific risk unknown.",
+  "success_criteria": "No definite indoor/outdoor classification invented; conflict=null while rain=80% can be reported.",
+  "failure_edge_cases": "Guessing from vague title; definitive conflict without exposure basis."
+}

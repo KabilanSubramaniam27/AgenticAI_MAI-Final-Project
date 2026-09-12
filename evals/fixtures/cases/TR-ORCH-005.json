@@ -1,0 +1,24 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-ORCH-005",
+  "agent": "Orchestrator",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-09-11T12:00:00Z",
+  "user_input": "Can this trip fit USD 2000 when the hotel price is unavailable?",
+  "input_refs": {
+    "specialist_results": "specialist_results/TR-ORCH-005.json",
+    "currency": "currency/TR-ORCH-005.json",
+    "trip": "trips/TR-ORCH-005.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "known_subtotal": "900.00",
+    "total": null,
+    "delta": null,
+    "fits_budget": null
+  },
+  "expected_behavior": "Return the known subtotal and an unknown complete-budget verdict.",
+  "success_criteria": "Known subtotal=900; total=null; delta=null; fits_budget=null; missing lodging named.",
+  "failure_edge_cases": "Hotel cost set to zero; known subtotal presented as complete total."
+}

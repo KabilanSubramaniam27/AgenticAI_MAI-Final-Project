@@ -1,0 +1,22 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-ORCH-007",
+  "agent": "Orchestrator",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-09-11T12:00:00Z",
+  "user_input": "Can you total my EUR hotel and USD flight in dollars?",
+  "input_refs": {
+    "specialist_results": "specialist_results/TR-ORCH-007.json",
+    "currency": "currency/TR-ORCH-007.json",
+    "trip": "trips/TR-ORCH-007.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "total": null,
+    "fits_budget": null
+  },
+  "expected_behavior": "Preserve original currency subtotals and state conversion is unavailable.",
+  "success_criteria": "No combined USD total or fit claim; missing EUR-USD rate explicit.",
+  "failure_edge_cases": "Using remembered exchange rate; adding 600 and 900 as same currency."
+}

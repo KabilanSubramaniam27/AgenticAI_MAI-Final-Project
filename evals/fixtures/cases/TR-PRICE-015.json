@@ -1,0 +1,23 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-PRICE-015",
+  "agent": "Price-Watcher",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-09-11T12:00:00Z",
+  "user_input": "Find me a flight to Lisbon; I have not given my departure airport.",
+  "input_refs": {
+    "flights": "flights/TR-PRICE-015.json",
+    "hotels": "hotels/TR-PRICE-015.json",
+    "trip": "trips/TR-PRICE-015.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "clarify": [
+      "origin"
+    ]
+  },
+  "expected_behavior": "Ask for origin instead of guessing a quote.",
+  "success_criteria": "Origin clarification; no flight amount or assumed airport.",
+  "failure_edge_cases": "Assuming JFK from example defaults despite explicit missing-origin override."
+}

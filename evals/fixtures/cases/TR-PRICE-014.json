@@ -1,0 +1,23 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-PRICE-014",
+  "agent": "Price-Watcher",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-09-11T12:00:00Z",
+  "user_input": "Only show refundable hotels.",
+  "input_refs": {
+    "flights": "flights/TR-PRICE-014.json",
+    "hotels": "hotels/TR-PRICE-014.json",
+    "trip": "trips/TR-PRICE-014.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "eligible_hotel_ids": [
+      "H-REF"
+    ]
+  },
+  "expected_behavior": "Do not equate missing cancellation information with refundable status.",
+  "success_criteria": "H-REF with explicit refundable conditions can be selected; H-UNKNOWN not certified refundable.",
+  "failure_edge_cases": "Unknown attribute treated as a confirmed match."
+}

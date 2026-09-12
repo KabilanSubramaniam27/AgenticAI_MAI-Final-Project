@@ -1,0 +1,24 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-PRICE-019",
+  "agent": "Price-Watcher",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-09-11T12:00:00Z",
+  "user_input": "Only quote JFK to Lisbon for my resolved dates.",
+  "input_refs": {
+    "flights": "flights/TR-PRICE-019.json",
+    "hotels": "hotels/TR-PRICE-019.json",
+    "trip": "trips/TR-PRICE-019.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "excluded_offer_ids": [
+      "F-WRONG"
+    ],
+    "flight_total": null
+  },
+  "expected_behavior": "Reject returned offer with mismatched route/date scope.",
+  "success_criteria": "No mismatched offer recommended as eligible; missing eligible options stated.",
+  "failure_edge_cases": "Quietly broadening hard search constraints."
+}

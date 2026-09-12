@@ -1,0 +1,22 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-ITIN-020",
+  "agent": "Itinerary-Builder",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-09-11T12:00:00Z",
+  "user_input": "Can you guarantee the fictional Harbor Gallery opens at 09:00?",
+  "input_refs": {
+    "guides": "guides/TR-ITIN-020.json",
+    "trip": "trips/TR-ITIN-020.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "unsupported_claims_allowed": false,
+    "current_hours_verified": false,
+    "conflict_disclosed": true
+  },
+  "expected_behavior": "Deduplicate repeated evidence and explain unresolved hours conflict.",
+  "success_criteria": "No guaranteed current opening time; duplicates do not count as independent confirmation.",
+  "failure_edge_cases": "Majority vote from duplicates; selecting a time without explaining conflict."
+}

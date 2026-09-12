@@ -1,0 +1,27 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-ORCH-010",
+  "agent": "Orchestrator",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-09-11T12:00:00Z",
+  "user_input": "We are two adults going to Paris October 10-19 with a $2000 budget.",
+  "input_refs": {
+    "specialist_results": "specialist_results/TR-ORCH-010.json",
+    "currency": "currency/TR-ORCH-010.json",
+    "trip": "trips/TR-ORCH-010.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "clarify": [
+      "budget_currency",
+      "budget_basis",
+      "rooms",
+      "origin",
+      "budget_scope"
+    ]
+  },
+  "expected_behavior": "Clarify currency, total-versus-per-person budget, rooms, origin and included categories.",
+  "success_criteria": "All missing pricing-critical facts identified; no USD 4000 inferred.",
+  "failure_edge_cases": "Doubling budget automatically; choosing two rooms without asking."
+}

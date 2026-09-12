@@ -1,0 +1,24 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-WEATHER-010",
+  "agent": "Weather-Risk-Agent",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-10-09T12:00:00Z",
+  "user_input": "Assess London activities with a forecast response labeled Paris.",
+  "input_refs": {
+    "weather": "weather/TR-WEATHER-010.json",
+    "specialist_results": "specialist_results/TR-WEATHER-010.json",
+    "trip": "trips/TR-WEATHER-010.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "rain_conflicts": {
+      "A1": null
+    },
+    "error": "location_mismatch"
+  },
+  "expected_behavior": "Reject response as evidence for London weather.",
+  "success_criteria": "London risk unknown; location mismatch explicit; no Paris value applied to London.",
+  "failure_edge_cases": "Matching date alone while ignoring coordinates/location."
+}

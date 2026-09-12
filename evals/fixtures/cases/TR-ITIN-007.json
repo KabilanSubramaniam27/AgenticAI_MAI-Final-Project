@@ -1,0 +1,21 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-ITIN-007",
+  "agent": "Itinerary-Builder",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-09-11T12:00:00Z",
+  "user_input": "Plan a London landmark visit from the returned guide.",
+  "input_refs": {
+    "guides": "guides/TR-ITIN-007.json",
+    "trip": "trips/TR-ITIN-007.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "unsupported_claims_allowed": false,
+    "evidence_gap_required": true
+  },
+  "expected_behavior": "Reject the Paris passage as support for a London recommendation.",
+  "success_criteria": "No Paris landmark placed in London; evidence-location mismatch acknowledged.",
+  "failure_edge_cases": "Silently changing destination to match retrieved content."
+}

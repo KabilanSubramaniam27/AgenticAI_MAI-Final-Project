@@ -1,0 +1,24 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-WEATHER-016",
+  "agent": "Weather-Risk-Agent",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-10-09T12:00:00Z",
+  "user_input": "The rainy outdoor A1 has been replaced by indoor B1. Reassess version 2.",
+  "input_refs": {
+    "weather": "weather/TR-WEATHER-016.json",
+    "specialist_results": "specialist_results/TR-WEATHER-016.json",
+    "trip": "trips/TR-WEATHER-016.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "rain_conflicts": {
+      "B1": false
+    },
+    "itinerary_version": 2
+  },
+  "expected_behavior": "Evaluate B1 under the new draft and preserve the reason for the change.",
+  "success_criteria": "Version 2 B1 indoor rain conflict=false; old A1 conflict not attached to B1; transfer uncertainty retained.",
+  "failure_edge_cases": "Reusing v1 conflict without checking revised activity."
+}

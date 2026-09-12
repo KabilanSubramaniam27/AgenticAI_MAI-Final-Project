@@ -1,0 +1,24 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-PRICE-020",
+  "agent": "Price-Watcher",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-09-11T12:00:00Z",
+  "user_input": "Price the hotel I selected, provider hotel ID H-SELECTED.",
+  "input_refs": {
+    "flights": "flights/TR-PRICE-020.json",
+    "hotels": "hotels/TR-PRICE-020.json",
+    "trip": "trips/TR-PRICE-020.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "excluded_hotel_ids": [
+      "H-OTHER"
+    ],
+    "selected_hotel_total": null
+  },
+  "expected_behavior": "Use offers for the exact selected provider ID or report no matching offer.",
+  "success_criteria": "H-OTHER offer excluded despite similar display name; no selected-hotel quote fabricated.",
+  "failure_edge_cases": "Joining records by name only; claiming H-OTHER price belongs to H-SELECTED."
+}

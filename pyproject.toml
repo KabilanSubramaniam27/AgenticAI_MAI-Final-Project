@@ -8,14 +8,30 @@ version = "0.1.0"
 description = "Source-traceable Wikivoyage ingestion with local Chroma embeddings"
 requires-python = ">=3.12,<3.15"
 dependencies = [
-  "chromadb>=1.0,<2", "httpx>=0.28,<1", "langsmith>=0.4,<1",
-  "mwparserfromhell>=0.7,<1", "numpy>=2,<3", "pydantic>=2.10,<3",
-  "pydantic-settings>=2.8,<3", "python-dotenv>=1,<2", "pyyaml>=6,<7",
-  "rich>=13,<15", "tokenizers>=0.20,<1", "typer>=0.15,<1",
+  "chromadb>=1.0,<2",
+  "deepagents>=0.4,<0.5",
+  "fastapi>=0.115,<1",
+  "httpx>=0.28,<1",
+  "langchain-openai>=1,<2",
+  "langsmith>=0.4,<1",
+  "mcp>=1.26,<2",
+  "mwparserfromhell>=0.7,<1",
+  "numpy>=2,<3",
+  "pydantic>=2.10,<3",
+  "pydantic-settings>=2.8,<3",
+  "python-dotenv>=1,<2",
+  "pyyaml>=6,<7",
+  "rich>=13,<15",
+  "streamlit>=1.42,<2",
+  "tokenizers>=0.20,<1",
+  "typer>=0.15,<1",
+  "uvicorn>=0.30,<1",
 ]
 
 [project.scripts]
 tripradar-ingest = "tripradar_ingestion.cli:app"
+tripradar = "tripradar_agents.cli:main"
+tripradar-eval = "tripradar_agents.evaluation:main"
 
 [dependency-groups]
 dev = ["pytest>=8,<10", "respx>=0.22,<1", "ruff>=0.11,<1", "mypy>=1.15,<2", "types-PyYAML"]
@@ -36,3 +52,6 @@ select = ["E4", "E7", "E9", "F", "I", "UP", "B"]
 python_version = "3.12"
 ignore_missing_imports = true
 check_untyped_defs = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/tripradar_ingestion", "src/tripradar_agents"]

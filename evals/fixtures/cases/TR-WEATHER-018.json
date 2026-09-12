@@ -1,0 +1,26 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-WEATHER-018",
+  "agent": "Weather-Risk-Agent",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-10-09T12:00:00Z",
+  "user_input": "Assess a hike with forecast maximum temperature 36 C.",
+  "input_refs": {
+    "weather": "weather/TR-WEATHER-018.json",
+    "specialist_results": "specialist_results/TR-WEATHER-018.json",
+    "trip": "trips/TR-WEATHER-018.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "rain_conflicts": {
+      "A1": false
+    },
+    "heat_conflicts": {
+      "A1": true
+    }
+  },
+  "expected_behavior": "Apply the explicit fixture heat policy to the heat-sensitive activity.",
+  "success_criteria": "Heat conflict=true at 36 C against >=35 C; rain rule evaluated separately; no official alert invented.",
+  "failure_edge_cases": "Ignoring heat because rain is low; claiming official warning not supplied."
+}

@@ -1,0 +1,26 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-ORCH-008",
+  "agent": "Orchestrator",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-09-11T12:00:00Z",
+  "user_input": "Plan exactly 10 days in Lisbon from October 10 through October 20, 2026.",
+  "input_refs": {
+    "specialist_results": "specialist_results/TR-ORCH-008.json",
+    "currency": "currency/TR-ORCH-008.json",
+    "trip": "trips/TR-ORCH-008.json"
+  },
+  "intentional_invalid_conditions": [
+    "contradictory_duration"
+  ],
+  "expected": {
+    "inclusive_day_count": 11,
+    "clarify": [
+      "duration_or_dates"
+    ]
+  },
+  "expected_behavior": "Clarify whether to keep dates or ten-day duration.",
+  "success_criteria": "States inclusive dates span 11 days; no silent change to either date or duration.",
+  "failure_edge_cases": "Returning a ten-row itinerary labeled October 10-20."
+}

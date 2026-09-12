@@ -1,0 +1,22 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-PRICE-009",
+  "agent": "Price-Watcher",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-09-11T12:00:00Z",
+  "user_input": "Find a flight when the search returns no offers.",
+  "input_refs": {
+    "flights": "flights/TR-PRICE-009.json",
+    "hotels": "hotels/TR-PRICE-009.json",
+    "trip": "trips/TR-PRICE-009.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "flight_status": "no_results",
+    "flight_total": null
+  },
+  "expected_behavior": "Report no offers found for the specified search, not zero flight cost.",
+  "success_criteria": "No invented fare/carrier; no_results distinguished from service failure; hotel can remain separately available.",
+  "failure_edge_cases": "Claiming no flights exist anywhere; zero-cost flight."
+}

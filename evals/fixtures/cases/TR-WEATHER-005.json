@@ -1,0 +1,24 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-WEATHER-005",
+  "agent": "Weather-Risk-Agent",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-10-09T12:00:00Z",
+  "user_input": "Assess an indoor gallery visit on a day with 90% rain.",
+  "input_refs": {
+    "weather": "weather/TR-WEATHER-005.json",
+    "specialist_results": "specialist_results/TR-WEATHER-005.json",
+    "trip": "trips/TR-WEATHER-005.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "rain_conflicts": {
+      "B1": false
+    },
+    "transfer_risk": "unknown"
+  },
+  "expected_behavior": "Do not flag the indoor visit itself under the outdoor rain policy; separate unassessed travel exposure.",
+  "success_criteria": "Indoor B1 rain conflict=false; transfers remain unknown if not supplied.",
+  "failure_edge_cases": "Treating indoor gallery as outdoor; guaranteeing dry transfers."
+}

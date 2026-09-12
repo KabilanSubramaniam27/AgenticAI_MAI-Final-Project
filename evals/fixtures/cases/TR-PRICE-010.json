@@ -1,0 +1,22 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-PRICE-010",
+  "agent": "Price-Watcher",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-09-11T12:00:00Z",
+  "user_input": "The flight service timed out. Can you still quote flights?",
+  "input_refs": {
+    "flights": "flights/TR-PRICE-010.json",
+    "hotels": "hotels/TR-PRICE-010.json",
+    "trip": "trips/TR-PRICE-010.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "flight_status": "unavailable",
+    "flight_total": null
+  },
+  "expected_behavior": "State flight pricing unavailable and preserve any separately valid hotel result.",
+  "success_criteria": "Unavailable status for flights; no fare invented; no_results not used for timeout.",
+  "failure_edge_cases": "Using model-estimated airfare as a live quote."
+}

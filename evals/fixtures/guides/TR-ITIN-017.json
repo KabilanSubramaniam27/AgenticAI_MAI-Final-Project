@@ -1,0 +1,15 @@
+{
+  "status": "ok",
+  "archived_passages_file": "guides/passages.json",
+  "archived_passage_aliases": [],
+  "synthetic_passages": [
+    {
+      "id": "G-INDOOR",
+      "origin": "synthetic",
+      "destination_id": "lisbon",
+      "name": "Harbor Gallery",
+      "exposure": "indoor",
+      "text": "Harbor Gallery is a fictional indoor activity in lisbon, for tests only."
+    }
+  ]
+}

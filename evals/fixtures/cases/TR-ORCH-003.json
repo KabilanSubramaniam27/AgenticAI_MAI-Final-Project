@@ -1,0 +1,23 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-ORCH-003",
+  "agent": "Orchestrator",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-09-11T12:00:00Z",
+  "user_input": "My complete cost ledger totals exactly my USD 2000 budget. Does it fit?",
+  "input_refs": {
+    "specialist_results": "specialist_results/TR-ORCH-003.json",
+    "currency": "currency/TR-ORCH-003.json",
+    "trip": "trips/TR-ORCH-003.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "total": "2000.00",
+    "delta": "0.00",
+    "fits_budget": true
+  },
+  "expected_behavior": "Treat equality as within budget while preserving quote qualifications.",
+  "success_criteria": "total=2000; delta=0; fits_budget=true; no positive remaining balance or over-budget statement.",
+  "failure_edge_cases": "Using strict less-than; inventing contingency not included in agreed scope."
+}

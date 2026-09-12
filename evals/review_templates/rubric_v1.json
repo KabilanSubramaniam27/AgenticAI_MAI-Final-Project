@@ -1,0 +1,12 @@
+{
+  "version": "tripradar-rubric-v1-draft",
+  "status": "pending_human_review",
+  "criteria": {
+    "grounding": "Every delivered factual recommendation is fully supported by its cited source. Unsupported hours, prices, accessibility and safety claims fail. Missing evidence is inconclusive, not pass.",
+    "constraints": "Destination, dates, traveler counts, rooms and accepted user constraints are preserved. Required clarifications are requested instead of invented defaults.",
+    "pricing": "Selected offers match date/occupancy scope, whole-party and whole-stay semantics. Provider/test environments and unknown fees are explicit.",
+    "weather": "Forecast scope matches actual returned dates and destination. Unknown coverage and unknown exposure remain unknown; rain >=60% conflicts with evidenced outdoor activity.",
+    "budget": "All amounts resolve to valid evidence or explicit user allowances. Unknown mandatory costs cannot produce a full fit verdict. Arithmetic and FX direction match the ledger.",
+    "usefulness": "The itinerary provides relevant distinct supported activities with practical pacing. Missing days, reserved travel days and unresolved logistics are disclosed. Score pass only if the request's required useful coverage is satisfied."
+  }
+}

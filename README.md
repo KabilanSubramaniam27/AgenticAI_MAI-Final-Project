@@ -135,3 +135,34 @@ tests/                          processing, collection, persistence and pipeline
 ```
 
 Generated data/model caches are gitignored. No code was copied from the earlier project. Text attribution and licensing are described in [source attribution](docs/source-attribution.md).
+
+## TripRadar agent vertical slice
+
+Run the complete local fixture flow (Streamlit → FastAPI → DeepAgents → specialists/MCP):
+
+```bash
+uv sync
+PYTHONPATH=src uv run python -m tripradar_agents.cli --fixture
+```
+
+Open http://127.0.0.1:8501. Fixture mode is explicitly labeled and uses no paid LLM calls.
+Live model/Chroma/weather configuration, guardrails, tests and remaining milestones are documented
+in [the agent slice guide](docs/agents/vertical-slice.md). Live flight/hotel pricing is not enabled yet;
+results are provisional, with unknown costs/coverage shown explicitly. Judge automation is deferred.
+
+Agent LangSmith observability is available: set `TRIPRADAR_AGENT_LANGSMITH_TRACING=true`
+and provide `LANGSMITH_API_KEY` in `.env`, then restart. Redacted traces go to `tripradar-agents`;
+ingestion tracing remains separate. See [LangSmith setup](docs/agents/vertical-slice.md#langsmith-observability).
+
+## Expanded agent implementation
+
+See [implementation status and runbook](docs/agents/implementation-status.md) for the four OpenAI
+agents, runtime verification/repair, Amadeus/FX adapters, evidence-bound budget, and EDD workflow.
+Human acceptance and live-provider verification remain separate gates. Start the UI/API with:
+
+```bash
+PYTHONPATH=src .venv/bin/python -m tripradar_agents.cli
+```
+
+Evaluation commands are available via `python -m tripradar_agents.evaluation --help` with
+`PYTHONPATH=src`. Synthetic fixtures and captured benchmarks remain separate from destination Chroma.

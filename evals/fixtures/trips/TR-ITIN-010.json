@@ -1,0 +1,27 @@
+{
+  "destination_id": "lisbon",
+  "origin": "JFK",
+  "outbound_date": "2026-10-09",
+  "arrival_date": "2026-10-10",
+  "departure_date": "2026-10-10",
+  "check_in": "2026-10-10",
+  "check_out": "2026-10-19",
+  "adults": 1,
+  "rooms": 1,
+  "budget": {
+    "amount": "2000.00",
+    "currency": "USD",
+    "scope": [
+      "flights",
+      "lodging",
+      "meals",
+      "transport",
+      "activities",
+      "mandatory_fees"
+    ],
+    "basis": "whole_party"
+  },
+  "timezone": "Europe/Lisbon",
+  "dates_flexible": false,
+  "arrival_local_time": "18:00"
+}

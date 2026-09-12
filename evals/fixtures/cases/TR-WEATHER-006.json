@@ -1,0 +1,32 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-WEATHER-006",
+  "agent": "Weather-Risk-Agent",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-09-11T12:00:00Z",
+  "user_input": "Assess Lisbon October 10-19 using a September 11 forecast request.",
+  "input_refs": {
+    "weather": "weather/TR-WEATHER-006.json",
+    "specialist_results": "specialist_results/TR-WEATHER-006.json",
+    "trip": "trips/TR-WEATHER-006.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "rain_conflicts": {
+      "A1": null,
+      "A2": null,
+      "A3": null,
+      "A4": null,
+      "A5": null,
+      "A6": null,
+      "A7": null,
+      "A8": null,
+      "A9": null,
+      "A10": null
+    }
+  },
+  "expected_behavior": "Report unknown forecast risk for every requested date.",
+  "success_criteria": "Ten date entries or equivalent explicit range coverage unknown; conflict=null; no daily predictions invented.",
+  "failure_edge_cases": "Using September days as October forecast; seasonal advice labeled daily forecast."
+}

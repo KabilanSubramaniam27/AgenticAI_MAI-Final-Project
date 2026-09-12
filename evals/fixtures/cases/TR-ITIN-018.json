@@ -1,0 +1,22 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-ITIN-018",
+  "agent": "Itinerary-Builder",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-09-11T12:00:00Z",
+  "user_input": "Replace the rainy walk but do not invent places.",
+  "input_refs": {
+    "guides": "guides/TR-ITIN-018.json",
+    "trip": "trips/TR-ITIN-018.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "unsupported_claims_allowed": false,
+    "evidence_gap_required": true,
+    "replacement_available": false
+  },
+  "expected_behavior": "Report that no evidenced indoor option is available and keep the conflict visible.",
+  "success_criteria": "No unsupported replacement; explicit unresolved limitation or flexible unscheduled time.",
+  "failure_edge_cases": "Calling an outdoor route weather-proof; inserting an uncited museum."
+}

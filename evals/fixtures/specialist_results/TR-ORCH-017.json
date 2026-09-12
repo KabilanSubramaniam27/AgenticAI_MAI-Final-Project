@@ -1,0 +1,319 @@
+{
+  "prior_itinerary": {
+    "status": "ok",
+    "version": 1,
+    "days": [
+      {
+        "date": "2026-10-10",
+        "activities": [
+          {
+            "id": "A1",
+            "name": "Riverside Walk",
+            "exposure": "outdoor",
+            "evidence_ids": [
+              "G-SYN-1"
+            ]
+          }
+        ]
+      },
+      {
+        "date": "2026-10-11",
+        "activities": [
+          {
+            "id": "A2",
+            "name": "Riverside Walk",
+            "exposure": "outdoor",
+            "evidence_ids": [
+              "G-SYN-1"
+            ]
+          }
+        ]
+      },
+      {
+        "date": "2026-10-12",
+        "activities": [
+          {
+            "id": "A3",
+            "name": "Riverside Walk",
+            "exposure": "outdoor",
+            "evidence_ids": [
+              "G-SYN-1"
+            ]
+          }
+        ]
+      },
+      {
+        "date": "2026-10-13",
+        "activities": [
+          {
+            "id": "A4",
+            "name": "Riverside Walk",
+            "exposure": "outdoor",
+            "evidence_ids": [
+              "G-SYN-1"
+            ]
+          }
+        ]
+      },
+      {
+        "date": "2026-10-14",
+        "activities": [
+          {
+            "id": "A5",
+            "name": "Riverside Walk",
+            "exposure": "outdoor",
+            "evidence_ids": [
+              "G-SYN-1"
+            ]
+          }
+        ]
+      },
+      {
+        "date": "2026-10-15",
+        "activities": [
+          {
+            "id": "A6",
+            "name": "Riverside Walk",
+            "exposure": "outdoor",
+            "evidence_ids": [
+              "G-SYN-1"
+            ]
+          }
+        ]
+      },
+      {
+        "date": "2026-10-16",
+        "activities": [
+          {
+            "id": "A7",
+            "name": "Riverside Walk",
+            "exposure": "outdoor",
+            "evidence_ids": [
+              "G-SYN-1"
+            ]
+          }
+        ]
+      },
+      {
+        "date": "2026-10-17",
+        "activities": [
+          {
+            "id": "A8",
+            "name": "Riverside Walk",
+            "exposure": "outdoor",
+            "evidence_ids": [
+              "G-SYN-1"
+            ]
+          }
+        ]
+      },
+      {
+        "date": "2026-10-18",
+        "activities": [
+          {
+            "id": "A9",
+            "name": "Riverside Walk",
+            "exposure": "outdoor",
+            "evidence_ids": [
+              "G-SYN-1"
+            ]
+          }
+        ]
+      },
+      {
+        "date": "2026-10-19",
+        "activities": [
+          {
+            "id": "A10",
+            "name": "Riverside Walk",
+            "exposure": "outdoor",
+            "evidence_ids": [
+              "G-SYN-1"
+            ]
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "id": "G-SYN-1",
+        "origin": "synthetic",
+        "destination_id": "lisbon",
+        "name": "Riverside Walk",
+        "exposure": "outdoor",
+        "text": "Riverside Walk is a fictional outdoor activity in lisbon, for tests only."
+      }
+    ],
+    "limitations": [
+      "Repeated fictional walk for isolated orchestration tests; not a real travel itinerary."
+    ]
+  },
+  "itinerary": {
+    "status": "ok",
+    "version": 2,
+    "days": [
+      {
+        "date": "2026-10-10",
+        "activities": [
+          {
+            "id": "A1",
+            "name": "Riverside Walk",
+            "exposure": "outdoor",
+            "evidence_ids": [
+              "G-SYN-1"
+            ]
+          }
+        ]
+      },
+      {
+        "date": "2026-10-11",
+        "activities": [
+          {
+            "id": "B2",
+            "name": "Harbor Gallery",
+            "exposure": "indoor",
+            "evidence_ids": [
+              "G-B2"
+            ]
+          }
+        ]
+      },
+      {
+        "date": "2026-10-12",
+        "activities": [
+          {
+            "id": "A3",
+            "name": "Riverside Walk",
+            "exposure": "outdoor",
+            "evidence_ids": [
+              "G-SYN-1"
+            ]
+          }
+        ]
+      },
+      {
+        "date": "2026-10-13",
+        "activities": [
+          {
+            "id": "A4",
+            "name": "Riverside Walk",
+            "exposure": "outdoor",
+            "evidence_ids": [
+              "G-SYN-1"
+            ]
+          }
+        ]
+      },
+      {
+        "date": "2026-10-14",
+        "activities": [
+          {
+            "id": "A5",
+            "name": "Riverside Walk",
+            "exposure": "outdoor",
+            "evidence_ids": [
+              "G-SYN-1"
+            ]
+          }
+        ]
+      },
+      {
+        "date": "2026-10-15",
+        "activities": [
+          {
+            "id": "A6",
+            "name": "Riverside Walk",
+            "exposure": "outdoor",
+            "evidence_ids": [
+              "G-SYN-1"
+            ]
+          }
+        ]
+      },
+      {
+        "date": "2026-10-16",
+        "activities": [
+          {
+            "id": "A7",
+            "name": "Riverside Walk",
+            "exposure": "outdoor",
+            "evidence_ids": [
+              "G-SYN-1"
+            ]
+          }
+        ]
+      },
+      {
+        "date": "2026-10-17",
+        "activities": [
+          {
+            "id": "A8",
+            "name": "Riverside Walk",
+            "exposure": "outdoor",
+            "evidence_ids": [
+              "G-SYN-1"
+            ]
+          }
+        ]
+      },
+      {
+        "date": "2026-10-18",
+        "activities": [
+          {
+            "id": "A9",
+            "name": "Riverside Walk",
+            "exposure": "outdoor",
+            "evidence_ids": [
+              "G-SYN-1"
+            ]
+          }
+        ]
+      },
+      {
+        "date": "2026-10-19",
+        "activities": [
+          {
+            "id": "A10",
+            "name": "Riverside Walk",
+            "exposure": "outdoor",
+            "evidence_ids": [
+              "G-SYN-1"
+            ]
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "id": "G-SYN-1",
+        "origin": "synthetic",
+        "destination_id": "lisbon",
+        "name": "Riverside Walk",
+        "exposure": "outdoor",
+        "text": "Riverside Walk is a fictional outdoor activity in lisbon, for tests only."
+      },
+      {
+        "id": "G-B2",
+        "origin": "synthetic",
+        "destination_id": "lisbon",
+        "name": "Harbor Gallery",
+        "exposure": "indoor",
+        "text": "Harbor Gallery is a fictional indoor activity in lisbon, for tests only."
+      }
+    ],
+    "limitations": [
+      "Repeated fictional walk for isolated orchestration tests; not a real travel itinerary."
+    ]
+  },
+  "weather": {
+    "itinerary_version": 2,
+    "activity_id": "B2",
+    "date": "2026-10-11",
+    "rain_conflict": false,
+    "previous_conflict": {
+      "activity_id": "A2",
+      "rain_conflict": true
+    }
+  },
+  "cost_change": "0"
+}

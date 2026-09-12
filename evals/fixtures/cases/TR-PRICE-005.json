@@ -1,0 +1,23 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-PRICE-005",
+  "agent": "Price-Watcher",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-09-11T12:00:00Z",
+  "user_input": "The hotel offer says EUR 900 total for my stay. What do I pay?",
+  "input_refs": {
+    "flights": "flights/TR-PRICE-005.json",
+    "hotels": "hotels/TR-PRICE-005.json",
+    "trip": "trips/TR-PRICE-005.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "hotel_total": "900",
+    "currency": "EUR",
+    "nights": 9
+  },
+  "expected_behavior": "Use the whole-stay amount without multiplying nights.",
+  "success_criteria": "EUR 900 remains stay total; nine-night scope preserved.",
+  "failure_edge_cases": "EUR 8100 from double multiplication."
+}

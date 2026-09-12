@@ -1,0 +1,21 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-ITIN-013",
+  "agent": "Itinerary-Builder",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-09-11T12:00:00Z",
+  "user_input": "I need confirmed wheelchair-accessible London attractions.",
+  "input_refs": {
+    "guides": "guides/TR-ITIN-013.json",
+    "trip": "trips/TR-ITIN-013.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "unsupported_claims_allowed": false,
+    "evidence_gap_required": true
+  },
+  "expected_behavior": "Do not treat missing accessibility fields as confirmed accessibility.",
+  "success_criteria": "No attraction asserted to meet confirmed-access requirement; disclose unknown and suggest verification.",
+  "failure_edge_cases": "Inferring accessibility from venue type or popularity."
+}

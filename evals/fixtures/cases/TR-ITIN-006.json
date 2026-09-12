@@ -1,0 +1,21 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-ITIN-006",
+  "agent": "Itinerary-Builder",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-09-11T12:00:00Z",
+  "user_input": "Recommend Paris restaurants from this passage.",
+  "input_refs": {
+    "guides": "guides/TR-ITIN-006.json",
+    "trip": "trips/TR-ITIN-006.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "unsupported_claims_allowed": false,
+    "evidence_gap_required": true
+  },
+  "expected_behavior": "State that the evidence does not support restaurant recommendations.",
+  "success_criteria": "No restaurant invented; explicitly distinguish nonempty retrieval from relevant support.",
+  "failure_edge_cases": "Treating a high similarity score as evidence for a named restaurant."
+}

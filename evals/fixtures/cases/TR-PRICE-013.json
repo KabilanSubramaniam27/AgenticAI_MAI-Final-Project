@@ -1,0 +1,26 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-PRICE-013",
+  "agent": "Price-Watcher",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-09-11T12:00:00Z",
+  "user_input": "I require a direct flight arriving before 18:00. Pick the best eligible offer.",
+  "input_refs": {
+    "flights": "flights/TR-PRICE-013.json",
+    "hotels": "hotels/TR-PRICE-013.json",
+    "trip": "trips/TR-PRICE-013.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "eligible_offer_ids": [
+      "F-DIRECT"
+    ],
+    "excluded_offer_ids": [
+      "F-CHEAP"
+    ]
+  },
+  "expected_behavior": "Exclude ineligible cheap options and select an eligible option.",
+  "success_criteria": "F-DIRECT USD 700, zero stops, arrival 16:00 selected; F-CHEAP not recommended as meeting requirements.",
+  "failure_edge_cases": "Blindly choosing cheapest; hiding layovers."
+}

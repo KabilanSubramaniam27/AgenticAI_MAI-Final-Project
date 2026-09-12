@@ -1,0 +1,24 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-ORCH-016",
+  "agent": "Orchestrator",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-09-11T12:00:00Z",
+  "user_input": "The budget fits, but no forecast is available for October. Is the plan weather-checked?",
+  "input_refs": {
+    "specialist_results": "specialist_results/TR-ORCH-016.json",
+    "currency": "currency/TR-ORCH-016.json",
+    "trip": "trips/TR-ORCH-016.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "total": "1975.00",
+    "fits_budget": true,
+    "weather_status": "unknown",
+    "weather_checked": false
+  },
+  "expected_behavior": "Separate budget conclusion from unavailable weather assessment.",
+  "success_criteria": "Budget may fit on its stated evidence; every uncovered day remains weather unknown; no all-clear claim.",
+  "failure_edge_cases": "Conflating budget success with forecast coverage."
+}

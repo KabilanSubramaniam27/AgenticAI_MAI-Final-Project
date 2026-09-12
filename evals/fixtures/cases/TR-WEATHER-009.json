@@ -1,0 +1,25 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-WEATHER-009",
+  "agent": "Weather-Risk-Agent",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-10-09T12:00:00Z",
+  "user_input": "My three-day trip has forecast rows for day 1 and day 3 only.",
+  "input_refs": {
+    "weather": "weather/TR-WEATHER-009.json",
+    "specialist_results": "specialist_results/TR-WEATHER-009.json",
+    "trip": "trips/TR-WEATHER-009.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "rain_conflicts": {
+      "A1": false,
+      "A2": null,
+      "A3": false
+    }
+  },
+  "expected_behavior": "Keep missing middle day visible as unknown.",
+  "success_criteria": "Oct 10 and 12 assessed at 20%; Oct 11 unknown/null; no interpolation presented as provider forecast.",
+  "failure_edge_cases": "Shifting Oct 12 row onto Oct 11 by array position."
+}

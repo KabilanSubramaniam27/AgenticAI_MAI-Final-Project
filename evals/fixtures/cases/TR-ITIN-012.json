@@ -1,0 +1,21 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-ITIN-012",
+  "agent": "Itinerary-Builder",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-09-11T12:00:00Z",
+  "user_input": "Give me a relaxed Paris day with at most two main activities.",
+  "input_refs": {
+    "guides": "guides/TR-ITIN-012.json",
+    "trip": "trips/TR-ITIN-012.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "unsupported_claims_allowed": false,
+    "max_main_activities": 2
+  },
+  "expected_behavior": "Select no more than two supported landmarks and preserve the pace constraint.",
+  "success_criteria": "At most two main activities from G-PAR; no dense extra stop list disguised as mandatory transit.",
+  "failure_edge_cases": "Ignoring activity cap; making precise queue estimates."
+}

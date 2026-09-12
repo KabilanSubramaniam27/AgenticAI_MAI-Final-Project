@@ -1,0 +1,22 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-PRICE-003",
+  "agent": "Price-Watcher",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-09-11T12:00:00Z",
+  "user_input": "What is the flight cost for two adults at USD 550 each?",
+  "input_refs": {
+    "flights": "flights/TR-PRICE-003.json",
+    "hotels": "hotels/TR-PRICE-003.json",
+    "trip": "trips/TR-PRICE-003.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "flight_total": "1100",
+    "currency": "USD"
+  },
+  "expected_behavior": "Calculate the group fare from explicit unit pricing.",
+  "success_criteria": "Group total=USD 1100; per-person=550; traveler count=2.",
+  "failure_edge_cases": "Reporting only USD 550 as the group total."
+}

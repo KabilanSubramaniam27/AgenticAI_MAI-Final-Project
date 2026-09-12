@@ -1,0 +1,24 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-ITIN-017",
+  "agent": "Itinerary-Builder",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-09-11T12:00:00Z",
+  "user_input": "Replace my rain-affected outdoor activity with a supported indoor option.",
+  "input_refs": {
+    "guides": "guides/TR-ITIN-017.json",
+    "trip": "trips/TR-ITIN-017.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "unsupported_claims_allowed": false,
+    "replacement_exposure": "indoor",
+    "required_evidence_aliases": [
+      "G-INDOOR"
+    ]
+  },
+  "expected_behavior": "Use the available indoor option and cite its evidence; preserve date and other activities.",
+  "success_criteria": "A1 replaced with B1 on Oct 10 only; G-INDOOR cited; unknown hours remain unknown.",
+  "failure_edge_cases": "Inventing a real museum alternative; claiming entry guaranteed."
+}

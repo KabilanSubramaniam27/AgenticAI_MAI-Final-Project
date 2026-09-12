@@ -1,0 +1,22 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-PRICE-018",
+  "agent": "Price-Watcher",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-09-11T12:00:00Z",
+  "user_input": "Include checked baggage, but the fare has no baggage fee information.",
+  "input_refs": {
+    "flights": "flights/TR-PRICE-018.json",
+    "hotels": "hotels/TR-PRICE-018.json",
+    "trip": "trips/TR-PRICE-018.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "base_fare": "600",
+    "baggage_inclusive_total": null
+  },
+  "expected_behavior": "Flag the required unknown charge and qualify the quote.",
+  "success_criteria": "Base flight amount may be shown; complete baggage-inclusive price unknown; no zero fee assumed.",
+  "failure_edge_cases": "Claiming 600 is the final baggage-inclusive fare."
+}

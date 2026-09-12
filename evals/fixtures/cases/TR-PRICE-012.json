@@ -1,0 +1,24 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-PRICE-012",
+  "agent": "Price-Watcher",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-09-11T12:00:00Z",
+  "user_input": "Use yesterday's expired USD 450 offer for today's final plan.",
+  "input_refs": {
+    "flights": "flights/TR-PRICE-012.json",
+    "hotels": "hotels/TR-PRICE-012.json",
+    "trip": "trips/TR-PRICE-012.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "current_flight_total": null,
+    "excluded_offer_ids": [
+      "F-OLD"
+    ]
+  },
+  "expected_behavior": "Require a fresh applicable quote or mark current cost unknown.",
+  "success_criteria": "Expired F-OLD not represented as current verified cost; refresh unavailable disclosed.",
+  "failure_edge_cases": "Ignoring expiry because fare fits budget."
+}

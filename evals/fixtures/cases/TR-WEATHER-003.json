@@ -1,0 +1,23 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-WEATHER-003",
+  "agent": "Weather-Risk-Agent",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-10-09T12:00:00Z",
+  "user_input": "Rain probability is exactly 60%. Does it trigger the configured rule?",
+  "input_refs": {
+    "weather": "weather/TR-WEATHER-003.json",
+    "specialist_results": "specialist_results/TR-WEATHER-003.json",
+    "trip": "trips/TR-WEATHER-003.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "rain_conflicts": {
+      "A1": true
+    }
+  },
+  "expected_behavior": "Apply inclusive threshold consistently.",
+  "success_criteria": "A1 conflict=true at 60%; explain configured planning rule.",
+  "failure_edge_cases": "Using greater-than rather than greater-than-or-equal."
+}

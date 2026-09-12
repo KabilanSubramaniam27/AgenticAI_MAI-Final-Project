@@ -1,0 +1,33 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-ORCH-011",
+  "agent": "Orchestrator",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-09-11T12:00:00Z",
+  "user_input": "Actually make it London, keeping my dates, origin, budget and traveler count.",
+  "input_refs": {
+    "specialist_results": "specialist_results/TR-ORCH-011.json",
+    "currency": "currency/TR-ORCH-011.json",
+    "trip": "trips/TR-ORCH-011.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "destination_id": "london",
+    "invalidate": [
+      "itinerary",
+      "prices",
+      "weather"
+    ],
+    "preserve": [
+      "dates",
+      "origin",
+      "budget",
+      "adults",
+      "rooms"
+    ]
+  },
+  "expected_behavior": "Apply London while preserving other explicit constraints and mark Lisbon-dependent results stale.",
+  "success_criteria": "London in resolved destination; unchanged dates/origin/budget/count; no Lisbon recommendations or costs reused as London facts.",
+  "failure_edge_cases": "Dropping unchanged budget; showing old Lisbon weather as London weather."
+}

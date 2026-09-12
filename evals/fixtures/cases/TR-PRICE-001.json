@@ -1,0 +1,25 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-PRICE-001",
+  "agent": "Price-Watcher",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-09-11T12:00:00Z",
+  "user_input": "Find a reasonable flight and hotel for the resolved trip.",
+  "input_refs": {
+    "flights": "flights/TR-PRICE-001.json",
+    "hotels": "hotels/TR-PRICE-001.json",
+    "trip": "trips/TR-PRICE-001.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "flight_total": "600",
+    "hotel_total": "900",
+    "quoted_categories_total": "1500",
+    "currency": "USD",
+    "full_trip_total_known": false
+  },
+  "expected_behavior": "Return applicable flight/hotel options with total scope and fixture status.",
+  "success_criteria": "Flight F1 USD 600 round-trip; hotel H1 USD 900 for 9 nights; combined quoted categories USD 1500; does not claim full trip cost.",
+  "failure_edge_cases": "Presenting flight+hotel as including meals/activities."
+}

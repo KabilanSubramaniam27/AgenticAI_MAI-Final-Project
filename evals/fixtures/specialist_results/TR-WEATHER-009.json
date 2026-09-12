@@ -1,0 +1,31 @@
+{
+  "itinerary": {
+    "version": 1,
+    "activities": [
+      {
+        "id": "A1",
+        "date": "2026-10-10",
+        "name": "Fictional walk",
+        "exposure": "outdoor",
+        "rain_sensitive": true,
+        "heat_sensitive": false
+      },
+      {
+        "id": "A2",
+        "date": "2026-10-11",
+        "name": "Fictional walk",
+        "exposure": "outdoor",
+        "rain_sensitive": true,
+        "heat_sensitive": false
+      },
+      {
+        "id": "A3",
+        "date": "2026-10-12",
+        "name": "Fictional walk",
+        "exposure": "outdoor",
+        "rain_sensitive": true,
+        "heat_sensitive": false
+      }
+    ]
+  }
+}

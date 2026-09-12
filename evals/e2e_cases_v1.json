@@ -1,0 +1,499 @@
+{
+  "version": "1.0-draft",
+  "status": "development_cases_pending_human_review",
+  "protected_holdout": false,
+  "cases": [
+    {
+      "case_id": "TR-E2E-001",
+      "scenario_family_id": "lisbon_standard",
+      "scenario": "Lisbon standard",
+      "input": {
+        "message": "Plan a trip using these details.",
+        "trip_fields": {
+          "destination": "Lisbon",
+          "start_date": "2026-10-10",
+          "end_date": "2026-10-19",
+          "budget": "2000",
+          "currency": "USD",
+          "origin": "JFK",
+          "adults": 1,
+          "rooms": 1
+        }
+      },
+      "review_status": "draft",
+      "requirements": [
+        "TR-ORCH-01",
+        "TR-ITIN-01",
+        "TR-PRICE-01",
+        "TR-WEATHER-01",
+        "TR-BUDGET-01"
+      ],
+      "expected_behavior": "Preserve the supplied constraints; return each date with grounded activities or explicit gaps. Use applicable evidence and disclose unknown costs and forecast coverage."
+    },
+    {
+      "case_id": "TR-E2E-002",
+      "scenario_family_id": "lisbon_lower_budget",
+      "scenario": "Lisbon lower_budget",
+      "input": {
+        "message": "Plan a trip using these details.",
+        "trip_fields": {
+          "destination": "Lisbon",
+          "start_date": "2026-10-10",
+          "end_date": "2026-10-19",
+          "budget": "1000",
+          "currency": "USD",
+          "origin": "JFK",
+          "adults": 1,
+          "rooms": 1
+        }
+      },
+      "review_status": "draft",
+      "requirements": [
+        "TR-ORCH-01",
+        "TR-ITIN-01",
+        "TR-PRICE-01",
+        "TR-WEATHER-01",
+        "TR-BUDGET-01"
+      ],
+      "expected_behavior": "Preserve the supplied constraints; return each date with grounded activities or explicit gaps. Use applicable evidence and disclose unknown costs and forecast coverage."
+    },
+    {
+      "case_id": "TR-E2E-003",
+      "scenario_family_id": "lisbon_group",
+      "scenario": "Lisbon group",
+      "input": {
+        "message": "Plan a trip using these details.",
+        "trip_fields": {
+          "destination": "Lisbon",
+          "start_date": "2026-10-10",
+          "end_date": "2026-10-16",
+          "budget": "4000",
+          "currency": "USD",
+          "origin": "JFK",
+          "adults": 2,
+          "rooms": 1
+        }
+      },
+      "review_status": "draft",
+      "requirements": [
+        "TR-ORCH-01",
+        "TR-ITIN-01",
+        "TR-PRICE-01",
+        "TR-WEATHER-01",
+        "TR-BUDGET-01"
+      ],
+      "expected_behavior": "Preserve the supplied constraints; return each date with grounded activities or explicit gaps. Use applicable evidence and disclose unknown costs and forecast coverage."
+    },
+    {
+      "case_id": "TR-E2E-004",
+      "scenario_family_id": "lisbon_two_rooms",
+      "scenario": "Lisbon two_rooms",
+      "input": {
+        "message": "Plan a trip using these details.",
+        "trip_fields": {
+          "destination": "Lisbon",
+          "start_date": "2026-10-10",
+          "end_date": "2026-10-23",
+          "budget": "6000",
+          "currency": "USD",
+          "origin": "JFK",
+          "adults": 2,
+          "rooms": 2
+        }
+      },
+      "review_status": "draft",
+      "requirements": [
+        "TR-ORCH-01",
+        "TR-ITIN-01",
+        "TR-PRICE-01",
+        "TR-WEATHER-01",
+        "TR-BUDGET-01"
+      ],
+      "expected_behavior": "Preserve the supplied constraints; return each date with grounded activities or explicit gaps. Use applicable evidence and disclose unknown costs and forecast coverage."
+    },
+    {
+      "case_id": "TR-E2E-005",
+      "scenario_family_id": "paris_standard",
+      "scenario": "Paris standard",
+      "input": {
+        "message": "Plan a trip using these details.",
+        "trip_fields": {
+          "destination": "Paris",
+          "start_date": "2026-10-10",
+          "end_date": "2026-10-19",
+          "budget": "2000",
+          "currency": "USD",
+          "origin": "JFK",
+          "adults": 1,
+          "rooms": 1
+        }
+      },
+      "review_status": "draft",
+      "requirements": [
+        "TR-ORCH-01",
+        "TR-ITIN-01",
+        "TR-PRICE-01",
+        "TR-WEATHER-01",
+        "TR-BUDGET-01"
+      ],
+      "expected_behavior": "Preserve the supplied constraints; return each date with grounded activities or explicit gaps. Use applicable evidence and disclose unknown costs and forecast coverage."
+    },
+    {
+      "case_id": "TR-E2E-006",
+      "scenario_family_id": "paris_lower_budget",
+      "scenario": "Paris lower_budget",
+      "input": {
+        "message": "Plan a trip using these details.",
+        "trip_fields": {
+          "destination": "Paris",
+          "start_date": "2026-10-10",
+          "end_date": "2026-10-19",
+          "budget": "1000",
+          "currency": "USD",
+          "origin": "JFK",
+          "adults": 1,
+          "rooms": 1
+        }
+      },
+      "review_status": "draft",
+      "requirements": [
+        "TR-ORCH-01",
+        "TR-ITIN-01",
+        "TR-PRICE-01",
+        "TR-WEATHER-01",
+        "TR-BUDGET-01"
+      ],
+      "expected_behavior": "Preserve the supplied constraints; return each date with grounded activities or explicit gaps. Use applicable evidence and disclose unknown costs and forecast coverage."
+    },
+    {
+      "case_id": "TR-E2E-007",
+      "scenario_family_id": "paris_group",
+      "scenario": "Paris group",
+      "input": {
+        "message": "Plan a trip using these details.",
+        "trip_fields": {
+          "destination": "Paris",
+          "start_date": "2026-10-10",
+          "end_date": "2026-10-16",
+          "budget": "4000",
+          "currency": "USD",
+          "origin": "JFK",
+          "adults": 2,
+          "rooms": 1
+        }
+      },
+      "review_status": "draft",
+      "requirements": [
+        "TR-ORCH-01",
+        "TR-ITIN-01",
+        "TR-PRICE-01",
+        "TR-WEATHER-01",
+        "TR-BUDGET-01"
+      ],
+      "expected_behavior": "Preserve the supplied constraints; return each date with grounded activities or explicit gaps. Use applicable evidence and disclose unknown costs and forecast coverage."
+    },
+    {
+      "case_id": "TR-E2E-008",
+      "scenario_family_id": "paris_two_rooms",
+      "scenario": "Paris two_rooms",
+      "input": {
+        "message": "Plan a trip using these details.",
+        "trip_fields": {
+          "destination": "Paris",
+          "start_date": "2026-10-10",
+          "end_date": "2026-10-23",
+          "budget": "6000",
+          "currency": "USD",
+          "origin": "JFK",
+          "adults": 2,
+          "rooms": 2
+        }
+      },
+      "review_status": "draft",
+      "requirements": [
+        "TR-ORCH-01",
+        "TR-ITIN-01",
+        "TR-PRICE-01",
+        "TR-WEATHER-01",
+        "TR-BUDGET-01"
+      ],
+      "expected_behavior": "Preserve the supplied constraints; return each date with grounded activities or explicit gaps. Use applicable evidence and disclose unknown costs and forecast coverage."
+    },
+    {
+      "case_id": "TR-E2E-009",
+      "scenario_family_id": "london_standard",
+      "scenario": "London standard",
+      "input": {
+        "message": "Plan a trip using these details.",
+        "trip_fields": {
+          "destination": "London",
+          "start_date": "2026-10-10",
+          "end_date": "2026-10-19",
+          "budget": "2000",
+          "currency": "USD",
+          "origin": "JFK",
+          "adults": 1,
+          "rooms": 1
+        }
+      },
+      "review_status": "draft",
+      "requirements": [
+        "TR-ORCH-01",
+        "TR-ITIN-01",
+        "TR-PRICE-01",
+        "TR-WEATHER-01",
+        "TR-BUDGET-01"
+      ],
+      "expected_behavior": "Preserve the supplied constraints; return each date with grounded activities or explicit gaps. Use applicable evidence and disclose unknown costs and forecast coverage."
+    },
+    {
+      "case_id": "TR-E2E-010",
+      "scenario_family_id": "london_lower_budget",
+      "scenario": "London lower_budget",
+      "input": {
+        "message": "Plan a trip using these details.",
+        "trip_fields": {
+          "destination": "London",
+          "start_date": "2026-10-10",
+          "end_date": "2026-10-19",
+          "budget": "1000",
+          "currency": "USD",
+          "origin": "JFK",
+          "adults": 1,
+          "rooms": 1
+        }
+      },
+      "review_status": "draft",
+      "requirements": [
+        "TR-ORCH-01",
+        "TR-ITIN-01",
+        "TR-PRICE-01",
+        "TR-WEATHER-01",
+        "TR-BUDGET-01"
+      ],
+      "expected_behavior": "Preserve the supplied constraints; return each date with grounded activities or explicit gaps. Use applicable evidence and disclose unknown costs and forecast coverage."
+    },
+    {
+      "case_id": "TR-E2E-011",
+      "scenario_family_id": "london_group",
+      "scenario": "London group",
+      "input": {
+        "message": "Plan a trip using these details.",
+        "trip_fields": {
+          "destination": "London",
+          "start_date": "2026-10-10",
+          "end_date": "2026-10-16",
+          "budget": "4000",
+          "currency": "USD",
+          "origin": "JFK",
+          "adults": 2,
+          "rooms": 1
+        }
+      },
+      "review_status": "draft",
+      "requirements": [
+        "TR-ORCH-01",
+        "TR-ITIN-01",
+        "TR-PRICE-01",
+        "TR-WEATHER-01",
+        "TR-BUDGET-01"
+      ],
+      "expected_behavior": "Preserve the supplied constraints; return each date with grounded activities or explicit gaps. Use applicable evidence and disclose unknown costs and forecast coverage."
+    },
+    {
+      "case_id": "TR-E2E-012",
+      "scenario_family_id": "london_two_rooms",
+      "scenario": "London two_rooms",
+      "input": {
+        "message": "Plan a trip using these details.",
+        "trip_fields": {
+          "destination": "London",
+          "start_date": "2026-10-10",
+          "end_date": "2026-10-23",
+          "budget": "6000",
+          "currency": "USD",
+          "origin": "JFK",
+          "adults": 2,
+          "rooms": 2
+        }
+      },
+      "review_status": "draft",
+      "requirements": [
+        "TR-ORCH-01",
+        "TR-ITIN-01",
+        "TR-PRICE-01",
+        "TR-WEATHER-01",
+        "TR-BUDGET-01"
+      ],
+      "expected_behavior": "Preserve the supplied constraints; return each date with grounded activities or explicit gaps. Use applicable evidence and disclose unknown costs and forecast coverage."
+    },
+    {
+      "case_id": "TR-E2E-013",
+      "scenario_family_id": "new_york_city_standard",
+      "scenario": "New York City standard",
+      "input": {
+        "message": "Plan a trip using these details.",
+        "trip_fields": {
+          "destination": "New York City",
+          "start_date": "2026-10-10",
+          "end_date": "2026-10-19",
+          "budget": "2000",
+          "currency": "USD",
+          "origin": "LHR",
+          "adults": 1,
+          "rooms": 1
+        }
+      },
+      "review_status": "draft",
+      "requirements": [
+        "TR-ORCH-01",
+        "TR-ITIN-01",
+        "TR-PRICE-01",
+        "TR-WEATHER-01",
+        "TR-BUDGET-01"
+      ],
+      "expected_behavior": "Preserve the supplied constraints; return each date with grounded activities or explicit gaps. Use applicable evidence and disclose unknown costs and forecast coverage."
+    },
+    {
+      "case_id": "TR-E2E-014",
+      "scenario_family_id": "new_york_city_lower_budget",
+      "scenario": "New York City lower_budget",
+      "input": {
+        "message": "Plan a trip using these details.",
+        "trip_fields": {
+          "destination": "New York City",
+          "start_date": "2026-10-10",
+          "end_date": "2026-10-19",
+          "budget": "1000",
+          "currency": "USD",
+          "origin": "LHR",
+          "adults": 1,
+          "rooms": 1
+        }
+      },
+      "review_status": "draft",
+      "requirements": [
+        "TR-ORCH-01",
+        "TR-ITIN-01",
+        "TR-PRICE-01",
+        "TR-WEATHER-01",
+        "TR-BUDGET-01"
+      ],
+      "expected_behavior": "Preserve the supplied constraints; return each date with grounded activities or explicit gaps. Use applicable evidence and disclose unknown costs and forecast coverage."
+    },
+    {
+      "case_id": "TR-E2E-015",
+      "scenario_family_id": "new_york_city_group",
+      "scenario": "New York City group",
+      "input": {
+        "message": "Plan a trip using these details.",
+        "trip_fields": {
+          "destination": "New York City",
+          "start_date": "2026-10-10",
+          "end_date": "2026-10-16",
+          "budget": "4000",
+          "currency": "USD",
+          "origin": "LHR",
+          "adults": 2,
+          "rooms": 1
+        }
+      },
+      "review_status": "draft",
+      "requirements": [
+        "TR-ORCH-01",
+        "TR-ITIN-01",
+        "TR-PRICE-01",
+        "TR-WEATHER-01",
+        "TR-BUDGET-01"
+      ],
+      "expected_behavior": "Preserve the supplied constraints; return each date with grounded activities or explicit gaps. Use applicable evidence and disclose unknown costs and forecast coverage."
+    },
+    {
+      "case_id": "TR-E2E-016",
+      "scenario_family_id": "new_york_city_two_rooms",
+      "scenario": "New York City two_rooms",
+      "input": {
+        "message": "Plan a trip using these details.",
+        "trip_fields": {
+          "destination": "New York City",
+          "start_date": "2026-10-10",
+          "end_date": "2026-10-23",
+          "budget": "6000",
+          "currency": "USD",
+          "origin": "LHR",
+          "adults": 2,
+          "rooms": 2
+        }
+      },
+      "review_status": "draft",
+      "requirements": [
+        "TR-ORCH-01",
+        "TR-ITIN-01",
+        "TR-PRICE-01",
+        "TR-WEATHER-01",
+        "TR-BUDGET-01"
+      ],
+      "expected_behavior": "Preserve the supplied constraints; return each date with grounded activities or explicit gaps. Use applicable evidence and disclose unknown costs and forecast coverage."
+    },
+    {
+      "case_id": "TR-E2E-017",
+      "scenario_family_id": "incomplete_portugal",
+      "scenario": "incomplete_portugal",
+      "input": {
+        "message": "Plan a 10-day trip to Portugal in October, budget $2000.",
+        "trip_fields": {}
+      },
+      "review_status": "draft",
+      "requirements": [
+        "TR-REQ-01",
+        "TR-CTX-01"
+      ],
+      "expected_behavior": "Ask for required missing or ambiguous information; never invent a resolved destination, airport or year."
+    },
+    {
+      "case_id": "TR-E2E-018",
+      "scenario_family_id": "unsupported_city",
+      "scenario": "unsupported_city",
+      "input": {
+        "message": "Plan a trip to Athens.",
+        "trip_fields": {}
+      },
+      "review_status": "draft",
+      "requirements": [
+        "TR-REQ-01",
+        "TR-CTX-01"
+      ],
+      "expected_behavior": "Ask for required missing or ambiguous information; never invent a resolved destination, airport or year."
+    },
+    {
+      "case_id": "TR-E2E-019",
+      "scenario_family_id": "missing_origin",
+      "scenario": "missing_origin",
+      "input": {
+        "message": "Plan ten days in Lisbon.",
+        "trip_fields": {}
+      },
+      "review_status": "draft",
+      "requirements": [
+        "TR-REQ-01",
+        "TR-CTX-01"
+      ],
+      "expected_behavior": "Ask for required missing or ambiguous information; never invent a resolved destination, airport or year."
+    },
+    {
+      "case_id": "TR-E2E-020",
+      "scenario_family_id": "ambiguous_dates",
+      "scenario": "ambiguous_dates",
+      "input": {
+        "message": "Plan a London trip next October.",
+        "trip_fields": {}
+      },
+      "review_status": "draft",
+      "requirements": [
+        "TR-REQ-01",
+        "TR-CTX-01"
+      ],
+      "expected_behavior": "Ask for required missing or ambiguous information; never invent a resolved destination, airport or year."
+    }
+  ]
+}

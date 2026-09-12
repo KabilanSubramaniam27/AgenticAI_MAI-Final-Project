@@ -1,0 +1,23 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-WEATHER-001",
+  "agent": "Weather-Risk-Agent",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-10-09T12:00:00Z",
+  "user_input": "Assess the outdoor walk on the covered date.",
+  "input_refs": {
+    "weather": "weather/TR-WEATHER-001.json",
+    "specialist_results": "specialist_results/TR-WEATHER-001.json",
+    "trip": "trips/TR-WEATHER-001.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "rain_conflicts": {
+      "A1": false
+    }
+  },
+  "expected_behavior": "Report no rain-threshold conflict for the covered walk without a safety guarantee.",
+  "success_criteria": "A1 Oct 10 rain conflict=false at 20%; covered forecast cited as synthetic; no all-weather-safe claim.",
+  "failure_edge_cases": "Equating no rain trigger with guaranteed safe conditions."
+}

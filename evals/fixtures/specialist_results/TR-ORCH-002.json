@@ -1,0 +1,244 @@
+{
+  "itinerary": {
+    "status": "ok",
+    "version": 1,
+    "days": [
+      {
+        "date": "2026-10-10",
+        "activities": [
+          {
+            "id": "A1",
+            "name": "Riverside Walk",
+            "exposure": "outdoor",
+            "evidence_ids": [
+              "G-SYN-1"
+            ]
+          }
+        ]
+      },
+      {
+        "date": "2026-10-11",
+        "activities": [
+          {
+            "id": "A2",
+            "name": "Riverside Walk",
+            "exposure": "outdoor",
+            "evidence_ids": [
+              "G-SYN-1"
+            ]
+          }
+        ]
+      },
+      {
+        "date": "2026-10-12",
+        "activities": [
+          {
+            "id": "A3",
+            "name": "Riverside Walk",
+            "exposure": "outdoor",
+            "evidence_ids": [
+              "G-SYN-1"
+            ]
+          }
+        ]
+      },
+      {
+        "date": "2026-10-13",
+        "activities": [
+          {
+            "id": "A4",
+            "name": "Riverside Walk",
+            "exposure": "outdoor",
+            "evidence_ids": [
+              "G-SYN-1"
+            ]
+          }
+        ]
+      },
+      {
+        "date": "2026-10-14",
+        "activities": [
+          {
+            "id": "A5",
+            "name": "Riverside Walk",
+            "exposure": "outdoor",
+            "evidence_ids": [
+              "G-SYN-1"
+            ]
+          }
+        ]
+      },
+      {
+        "date": "2026-10-15",
+        "activities": [
+          {
+            "id": "A6",
+            "name": "Riverside Walk",
+            "exposure": "outdoor",
+            "evidence_ids": [
+              "G-SYN-1"
+            ]
+          }
+        ]
+      },
+      {
+        "date": "2026-10-16",
+        "activities": [
+          {
+            "id": "A7",
+            "name": "Riverside Walk",
+            "exposure": "outdoor",
+            "evidence_ids": [
+              "G-SYN-1"
+            ]
+          }
+        ]
+      },
+      {
+        "date": "2026-10-17",
+        "activities": [
+          {
+            "id": "A8",
+            "name": "Riverside Walk",
+            "exposure": "outdoor",
+            "evidence_ids": [
+              "G-SYN-1"
+            ]
+          }
+        ]
+      },
+      {
+        "date": "2026-10-18",
+        "activities": [
+          {
+            "id": "A9",
+            "name": "Riverside Walk",
+            "exposure": "outdoor",
+            "evidence_ids": [
+              "G-SYN-1"
+            ]
+          }
+        ]
+      },
+      {
+        "date": "2026-10-19",
+        "activities": [
+          {
+            "id": "A10",
+            "name": "Riverside Walk",
+            "exposure": "outdoor",
+            "evidence_ids": [
+              "G-SYN-1"
+            ]
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "id": "G-SYN-1",
+        "origin": "synthetic",
+        "destination_id": "lisbon",
+        "name": "Riverside Walk",
+        "exposure": "outdoor",
+        "text": "Riverside Walk is a fictional outdoor activity in lisbon, for tests only."
+      }
+    ],
+    "limitations": [
+      "Repeated fictional walk for isolated orchestration tests; not a real travel itinerary."
+    ]
+  },
+  "weather": {
+    "status": "outside_forecast_horizon",
+    "coverage": []
+  },
+  "costs": [
+    {
+      "category": "flights",
+      "amount": "600",
+      "currency": "USD",
+      "basis": "whole_trip",
+      "status": "fixture_quote",
+      "evidence_id": "COST-flights"
+    },
+    {
+      "category": "lodging",
+      "amount": "900",
+      "currency": "EUR",
+      "basis": "whole_trip",
+      "status": "fixture_quote",
+      "evidence_id": "COST-lodging"
+    },
+    {
+      "category": "meals",
+      "amount": "200",
+      "currency": "EUR",
+      "basis": "whole_trip",
+      "status": "user_approved_allowance",
+      "evidence_id": "COST-meals"
+    },
+    {
+      "category": "transport",
+      "amount": "50",
+      "currency": "EUR",
+      "basis": "whole_trip",
+      "status": "user_approved_allowance",
+      "evidence_id": "COST-transport"
+    },
+    {
+      "category": "activities",
+      "amount": "100",
+      "currency": "EUR",
+      "basis": "whole_trip",
+      "status": "user_approved_allowance",
+      "evidence_id": "COST-activities"
+    }
+  ],
+  "cost_evidence": [
+    {
+      "id": "COST-flights",
+      "origin": "synthetic",
+      "kind": "fixture_quote",
+      "amount": "600",
+      "currency": "USD",
+      "scope": "whole_trip",
+      "taxes_and_mandatory_fees_included": true
+    },
+    {
+      "id": "COST-lodging",
+      "origin": "synthetic",
+      "kind": "fixture_quote",
+      "amount": "900",
+      "currency": "EUR",
+      "scope": "whole_trip",
+      "taxes_and_mandatory_fees_included": true
+    },
+    {
+      "id": "COST-meals",
+      "origin": "synthetic",
+      "kind": "user_approved_allowance",
+      "amount": "200",
+      "currency": "EUR",
+      "scope": "whole_trip",
+      "taxes_and_mandatory_fees_included": true
+    },
+    {
+      "id": "COST-transport",
+      "origin": "synthetic",
+      "kind": "user_approved_allowance",
+      "amount": "50",
+      "currency": "EUR",
+      "scope": "whole_trip",
+      "taxes_and_mandatory_fees_included": true
+    },
+    {
+      "id": "COST-activities",
+      "origin": "synthetic",
+      "kind": "user_approved_allowance",
+      "amount": "100",
+      "currency": "EUR",
+      "scope": "whole_trip",
+      "taxes_and_mandatory_fees_included": true
+    }
+  ]
+}

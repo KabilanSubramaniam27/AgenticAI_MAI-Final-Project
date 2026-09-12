@@ -14,7 +14,9 @@
       "TR-BUDGET-01",
       "TR-CTX-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-ORCH-001.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-ORCH-002": {
     "agent": "Orchestrator",
@@ -31,7 +33,9 @@
       "TR-BUDGET-01",
       "TR-CTX-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-ORCH-002.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-ORCH-003": {
     "agent": "Orchestrator",
@@ -48,7 +52,9 @@
       "TR-BUDGET-01",
       "TR-CTX-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-ORCH-003.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-ORCH-004": {
     "agent": "Orchestrator",
@@ -65,7 +71,9 @@
       "TR-BUDGET-01",
       "TR-CTX-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-ORCH-004.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-ORCH-005": {
     "agent": "Orchestrator",
@@ -82,7 +90,9 @@
       "TR-BUDGET-01",
       "TR-CTX-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-ORCH-005.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-ORCH-006": {
     "agent": "Orchestrator",
@@ -99,7 +109,9 @@
       "TR-BUDGET-01",
       "TR-CTX-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-ORCH-006.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-ORCH-007": {
     "agent": "Orchestrator",
@@ -116,7 +128,9 @@
       "TR-BUDGET-01",
       "TR-CTX-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-ORCH-007.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-ORCH-008": {
     "agent": "Orchestrator",
@@ -133,7 +147,9 @@
       "TR-BUDGET-01",
       "TR-CTX-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-ORCH-008.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-ORCH-009": {
     "agent": "Orchestrator",
@@ -150,7 +166,9 @@
       "TR-BUDGET-01",
       "TR-CTX-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-ORCH-009.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-ORCH-010": {
     "agent": "Orchestrator",
@@ -167,7 +185,9 @@
       "TR-BUDGET-01",
       "TR-CTX-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-ORCH-010.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-ORCH-011": {
     "agent": "Orchestrator",
@@ -184,7 +204,9 @@
       "TR-BUDGET-01",
       "TR-CTX-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-ORCH-011.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-ORCH-012": {
     "agent": "Orchestrator",
@@ -201,7 +223,9 @@
       "TR-BUDGET-01",
       "TR-CTX-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-ORCH-012.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-ORCH-013": {
     "agent": "Orchestrator",
@@ -218,7 +242,9 @@
       "TR-BUDGET-01",
       "TR-CTX-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-ORCH-013.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-ORCH-014": {
     "agent": "Orchestrator",
@@ -235,7 +261,9 @@
       "TR-BUDGET-01",
       "TR-CTX-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-ORCH-014.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-ORCH-015": {
     "agent": "Orchestrator",
@@ -252,7 +280,9 @@
       "TR-BUDGET-01",
       "TR-CTX-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-ORCH-015.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-ORCH-016": {
     "agent": "Orchestrator",
@@ -269,7 +299,9 @@
       "TR-BUDGET-01",
       "TR-CTX-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-ORCH-016.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-ORCH-017": {
     "agent": "Orchestrator",
@@ -286,7 +318,9 @@
       "TR-BUDGET-01",
       "TR-CTX-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-ORCH-017.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-ORCH-018": {
     "agent": "Orchestrator",
@@ -303,7 +337,9 @@
       "TR-BUDGET-01",
       "TR-CTX-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-ORCH-018.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-ORCH-019": {
     "agent": "Orchestrator",
@@ -320,7 +356,9 @@
       "TR-BUDGET-01",
       "TR-CTX-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-ORCH-019.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-ORCH-020": {
     "agent": "Orchestrator",
@@ -337,7 +375,9 @@
       "TR-BUDGET-01",
       "TR-CTX-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-ORCH-020.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-ITIN-001": {
     "agent": "Itinerary-Builder",
@@ -351,7 +391,9 @@
     "requirement_ids": [
       "TR-RAG-01",
       "TR-ITIN-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-ITIN-001.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-ITIN-002": {
     "agent": "Itinerary-Builder",
@@ -365,7 +407,9 @@
     "requirement_ids": [
       "TR-RAG-01",
       "TR-ITIN-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-ITIN-002.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-ITIN-003": {
     "agent": "Itinerary-Builder",
@@ -379,7 +423,9 @@
     "requirement_ids": [
       "TR-RAG-01",
       "TR-ITIN-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-ITIN-003.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-ITIN-004": {
     "agent": "Itinerary-Builder",
@@ -393,7 +439,9 @@
     "requirement_ids": [
       "TR-RAG-01",
       "TR-ITIN-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-ITIN-004.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-ITIN-005": {
     "agent": "Itinerary-Builder",
@@ -407,7 +455,9 @@
     "requirement_ids": [
       "TR-RAG-01",
       "TR-ITIN-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-ITIN-005.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-ITIN-006": {
     "agent": "Itinerary-Builder",
@@ -421,7 +471,9 @@
     "requirement_ids": [
       "TR-RAG-01",
       "TR-ITIN-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-ITIN-006.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-ITIN-007": {
     "agent": "Itinerary-Builder",
@@ -435,7 +487,9 @@
     "requirement_ids": [
       "TR-RAG-01",
       "TR-ITIN-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-ITIN-007.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-ITIN-008": {
     "agent": "Itinerary-Builder",
@@ -449,7 +503,9 @@
     "requirement_ids": [
       "TR-RAG-01",
       "TR-ITIN-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-ITIN-008.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-ITIN-009": {
     "agent": "Itinerary-Builder",
@@ -463,7 +519,9 @@
     "requirement_ids": [
       "TR-RAG-01",
       "TR-ITIN-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-ITIN-009.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-ITIN-010": {
     "agent": "Itinerary-Builder",
@@ -477,7 +535,9 @@
     "requirement_ids": [
       "TR-RAG-01",
       "TR-ITIN-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-ITIN-010.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-ITIN-011": {
     "agent": "Itinerary-Builder",
@@ -491,7 +551,9 @@
     "requirement_ids": [
       "TR-RAG-01",
       "TR-ITIN-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-ITIN-011.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-ITIN-012": {
     "agent": "Itinerary-Builder",
@@ -505,7 +567,9 @@
     "requirement_ids": [
       "TR-RAG-01",
       "TR-ITIN-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-ITIN-012.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-ITIN-013": {
     "agent": "Itinerary-Builder",
@@ -519,7 +583,9 @@
     "requirement_ids": [
       "TR-RAG-01",
       "TR-ITIN-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-ITIN-013.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-ITIN-014": {
     "agent": "Itinerary-Builder",
@@ -533,7 +599,9 @@
     "requirement_ids": [
       "TR-RAG-01",
       "TR-ITIN-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-ITIN-014.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-ITIN-015": {
     "agent": "Itinerary-Builder",
@@ -547,7 +615,9 @@
     "requirement_ids": [
       "TR-RAG-01",
       "TR-ITIN-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-ITIN-015.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-ITIN-016": {
     "agent": "Itinerary-Builder",
@@ -561,7 +631,9 @@
     "requirement_ids": [
       "TR-RAG-01",
       "TR-ITIN-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-ITIN-016.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-ITIN-017": {
     "agent": "Itinerary-Builder",
@@ -575,7 +647,9 @@
     "requirement_ids": [
       "TR-RAG-01",
       "TR-ITIN-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-ITIN-017.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-ITIN-018": {
     "agent": "Itinerary-Builder",
@@ -589,7 +663,9 @@
     "requirement_ids": [
       "TR-RAG-01",
       "TR-ITIN-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-ITIN-018.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-ITIN-019": {
     "agent": "Itinerary-Builder",
@@ -603,7 +679,9 @@
     "requirement_ids": [
       "TR-RAG-01",
       "TR-ITIN-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-ITIN-019.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-ITIN-020": {
     "agent": "Itinerary-Builder",
@@ -617,7 +695,9 @@
     "requirement_ids": [
       "TR-RAG-01",
       "TR-ITIN-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-ITIN-020.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-PRICE-001": {
     "agent": "Price-Watcher",
@@ -631,7 +711,9 @@
     "requirement_ids": [
       "TR-PRICE-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-PRICE-001.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-PRICE-002": {
     "agent": "Price-Watcher",
@@ -645,7 +727,9 @@
     "requirement_ids": [
       "TR-PRICE-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-PRICE-002.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-PRICE-003": {
     "agent": "Price-Watcher",
@@ -659,7 +743,9 @@
     "requirement_ids": [
       "TR-PRICE-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-PRICE-003.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-PRICE-004": {
     "agent": "Price-Watcher",
@@ -673,7 +759,9 @@
     "requirement_ids": [
       "TR-PRICE-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-PRICE-004.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-PRICE-005": {
     "agent": "Price-Watcher",
@@ -687,7 +775,9 @@
     "requirement_ids": [
       "TR-PRICE-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-PRICE-005.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-PRICE-006": {
     "agent": "Price-Watcher",
@@ -701,7 +791,9 @@
     "requirement_ids": [
       "TR-PRICE-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-PRICE-006.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-PRICE-007": {
     "agent": "Price-Watcher",
@@ -715,7 +807,9 @@
     "requirement_ids": [
       "TR-PRICE-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-PRICE-007.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-PRICE-008": {
     "agent": "Price-Watcher",
@@ -729,7 +823,9 @@
     "requirement_ids": [
       "TR-PRICE-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-PRICE-008.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-PRICE-009": {
     "agent": "Price-Watcher",
@@ -743,7 +839,9 @@
     "requirement_ids": [
       "TR-PRICE-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-PRICE-009.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-PRICE-010": {
     "agent": "Price-Watcher",
@@ -757,7 +855,9 @@
     "requirement_ids": [
       "TR-PRICE-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-PRICE-010.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-PRICE-011": {
     "agent": "Price-Watcher",
@@ -771,7 +871,9 @@
     "requirement_ids": [
       "TR-PRICE-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-PRICE-011.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-PRICE-012": {
     "agent": "Price-Watcher",
@@ -785,7 +887,9 @@
     "requirement_ids": [
       "TR-PRICE-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-PRICE-012.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-PRICE-013": {
     "agent": "Price-Watcher",
@@ -799,7 +903,9 @@
     "requirement_ids": [
       "TR-PRICE-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-PRICE-013.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-PRICE-014": {
     "agent": "Price-Watcher",
@@ -813,7 +919,9 @@
     "requirement_ids": [
       "TR-PRICE-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-PRICE-014.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-PRICE-015": {
     "agent": "Price-Watcher",
@@ -827,7 +935,9 @@
     "requirement_ids": [
       "TR-PRICE-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-PRICE-015.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-PRICE-016": {
     "agent": "Price-Watcher",
@@ -841,7 +951,9 @@
     "requirement_ids": [
       "TR-PRICE-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-PRICE-016.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-PRICE-017": {
     "agent": "Price-Watcher",
@@ -855,7 +967,9 @@
     "requirement_ids": [
       "TR-PRICE-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-PRICE-017.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-PRICE-018": {
     "agent": "Price-Watcher",
@@ -869,7 +983,9 @@
     "requirement_ids": [
       "TR-PRICE-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-PRICE-018.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-PRICE-019": {
     "agent": "Price-Watcher",
@@ -883,7 +999,9 @@
     "requirement_ids": [
       "TR-PRICE-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-PRICE-019.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-PRICE-020": {
     "agent": "Price-Watcher",
@@ -897,7 +1015,9 @@
     "requirement_ids": [
       "TR-PRICE-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-PRICE-020.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-WEATHER-001": {
     "agent": "Weather-Risk-Agent",
@@ -911,7 +1031,9 @@
     "requirement_ids": [
       "TR-WEATHER-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-WEATHER-001.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-WEATHER-002": {
     "agent": "Weather-Risk-Agent",
@@ -925,7 +1047,9 @@
     "requirement_ids": [
       "TR-WEATHER-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-WEATHER-002.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-WEATHER-003": {
     "agent": "Weather-Risk-Agent",
@@ -939,7 +1063,9 @@
     "requirement_ids": [
       "TR-WEATHER-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-WEATHER-003.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-WEATHER-004": {
     "agent": "Weather-Risk-Agent",
@@ -953,7 +1079,9 @@
     "requirement_ids": [
       "TR-WEATHER-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-WEATHER-004.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-WEATHER-005": {
     "agent": "Weather-Risk-Agent",
@@ -967,7 +1095,9 @@
     "requirement_ids": [
       "TR-WEATHER-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-WEATHER-005.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-WEATHER-006": {
     "agent": "Weather-Risk-Agent",
@@ -981,7 +1111,9 @@
     "requirement_ids": [
       "TR-WEATHER-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-WEATHER-006.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-WEATHER-007": {
     "agent": "Weather-Risk-Agent",
@@ -995,7 +1127,9 @@
     "requirement_ids": [
       "TR-WEATHER-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-WEATHER-007.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-WEATHER-008": {
     "agent": "Weather-Risk-Agent",
@@ -1009,7 +1143,9 @@
     "requirement_ids": [
       "TR-WEATHER-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-WEATHER-008.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-WEATHER-009": {
     "agent": "Weather-Risk-Agent",
@@ -1023,7 +1159,9 @@
     "requirement_ids": [
       "TR-WEATHER-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-WEATHER-009.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-WEATHER-010": {
     "agent": "Weather-Risk-Agent",
@@ -1037,7 +1175,9 @@
     "requirement_ids": [
       "TR-WEATHER-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-WEATHER-010.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-WEATHER-011": {
     "agent": "Weather-Risk-Agent",
@@ -1051,7 +1191,9 @@
     "requirement_ids": [
       "TR-WEATHER-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-WEATHER-011.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-WEATHER-012": {
     "agent": "Weather-Risk-Agent",
@@ -1065,7 +1207,9 @@
     "requirement_ids": [
       "TR-WEATHER-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-WEATHER-012.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-WEATHER-013": {
     "agent": "Weather-Risk-Agent",
@@ -1079,7 +1223,9 @@
     "requirement_ids": [
       "TR-WEATHER-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-WEATHER-013.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-WEATHER-014": {
     "agent": "Weather-Risk-Agent",
@@ -1093,7 +1239,9 @@
     "requirement_ids": [
       "TR-WEATHER-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-WEATHER-014.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-WEATHER-015": {
     "agent": "Weather-Risk-Agent",
@@ -1107,7 +1255,9 @@
     "requirement_ids": [
       "TR-WEATHER-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-WEATHER-015.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-WEATHER-016": {
     "agent": "Weather-Risk-Agent",
@@ -1121,7 +1271,9 @@
     "requirement_ids": [
       "TR-WEATHER-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-WEATHER-016.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-WEATHER-017": {
     "agent": "Weather-Risk-Agent",
@@ -1135,7 +1287,9 @@
     "requirement_ids": [
       "TR-WEATHER-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-WEATHER-017.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-WEATHER-018": {
     "agent": "Weather-Risk-Agent",
@@ -1149,7 +1303,9 @@
     "requirement_ids": [
       "TR-WEATHER-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-WEATHER-018.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-WEATHER-019": {
     "agent": "Weather-Risk-Agent",
@@ -1163,7 +1319,9 @@
     "requirement_ids": [
       "TR-WEATHER-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-WEATHER-019.json",
+    "fixture_version": "1.0-draft"
   },
   "TR-WEATHER-020": {
     "agent": "Weather-Risk-Agent",
@@ -1177,6 +1335,8 @@
     "requirement_ids": [
       "TR-WEATHER-01",
       "TR-FAIL-01"
-    ]
+    ],
+    "structured_fixture": "fixtures/cases/TR-WEATHER-020.json",
+    "fixture_version": "1.0-draft"
   }
 }

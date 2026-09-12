@@ -1,0 +1,21 @@
+{
+  "fixture_version": "1.0-draft",
+  "case_id": "TR-ITIN-005",
+  "agent": "Itinerary-Builder",
+  "origin": "synthetic",
+  "review_status": "pending_user_review",
+  "as_of": "2026-09-11T12:00:00Z",
+  "user_input": "Plan a Lisbon museum day using the supplied results.",
+  "input_refs": {
+    "guides": "guides/TR-ITIN-005.json",
+    "trip": "trips/TR-ITIN-005.json"
+  },
+  "intentional_invalid_conditions": [],
+  "expected": {
+    "unsupported_claims_allowed": false,
+    "evidence_gap_required": true
+  },
+  "expected_behavior": "Explain that recommendations cannot be grounded from an empty result.",
+  "success_criteria": "No named museum or fabricated citation; clear evidence gap and useful next step.",
+  "failure_edge_cases": "Filling the gap from model memory."
+}
