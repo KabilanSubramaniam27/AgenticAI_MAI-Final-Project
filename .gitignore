@@ -13,3 +13,17 @@ dist/
 .DS_Store
 ~$*
 :memory:.ses
+
+# Local documentation, planning prompts, and presentation assets
+/docs/
+/prompts/
+/images/
+
+# Generated documents and document-rendering artifacts
+*.pdf
+*_Application_Design_Technical_Architecture.docx
+*_Application_Design_Technical_Architecture.md
+render_document.py
+generation-notes.md
+render-checks.json
+artifact-hashes.json

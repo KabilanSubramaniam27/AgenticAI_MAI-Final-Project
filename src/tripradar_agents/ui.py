@@ -1,12 +1,76 @@
 """Streamlit talks only to FastAPI; no model/provider/database credentials in the browser."""
 
+import json
 import uuid
 from datetime import date, timedelta
+from io import BytesIO
 
 import httpx
 import streamlit as st
+from PIL import Image
 
-from tripradar_agents.config import Settings
+from tripradar_agents.config import ROOT, Settings
+
+# Local presentation assets never enter model context or destination evidence.
+IMAGES = ROOT / "images"
+
+
+def inspiration_assets():
+    catalog = IMAGES / "catalog.json"
+    if not catalog.is_file():
+        return []
+    return json.loads(catalog.read_text())
+
+
+@st.cache_data(show_spinner=False)
+def display_image(path, modified_ns):
+    # Decode AVIF/WebP server-side for consistent browser support; originals stay intact.
+    with Image.open(path) as source:
+        output = BytesIO()
+        source.save(output, format="PNG")
+        return output.getvalue()
+
+
+def local_image(filename, caption=None):
+    path = IMAGES / filename
+    if path.is_file():
+        st.image(
+            display_image(str(path), path.stat().st_mtime_ns), caption=caption, width="stretch"
+        )
+
+
+def welcome():
+    st.markdown(
+        """<style>
+        .block-container {max-width: 1160px; padding-top: 2.4rem;}
+        h1, h2, h3 {letter-spacing: -0.025em;}
+        [data-testid="stImage"] img {border-radius: 16px;}
+        [data-testid="stForm"] {border-radius: 18px; padding: 1.5rem;}
+        div.stButton > button[kind="primary"],
+        div.stFormSubmitButton > button[kind="primary"] {border-radius: 12px;}
+        </style>""",
+        unsafe_allow_html=True,
+    )
+    intro, visual = st.columns([1.05, 1], gap="large", vertical_alignment="center")
+    with intro:
+        st.caption("TRIPRADAR  /  A LITTLE PLANNING. MORE DISCOVERY.")
+        st.title("Your next chapter starts here.")
+        st.write(
+            "Turn your dates, budget and curiosity into a trip built around you. "
+            "Explore ideas backed by destination guides, with clear costs and weather context."
+        )
+        st.caption("LISBON · PARIS · LONDON · NEW YORK CITY")
+    with visual:
+        local_image("Title-Image.webp", "Start with a map. Make it your own.")
+    with st.expander("A little travel inspiration", expanded=False):
+        st.caption(
+            "Illustrative images from the project’s image library, not destination evidence or live offers."
+        )
+        columns = st.columns(3)
+        for index, asset in enumerate(inspiration_assets()):
+            with columns[index % 3]:
+                local_image(asset["filename"], asset["caption"])
+    st.divider()
 
 
 def show_http_rejection(exc):
@@ -27,9 +91,10 @@ def show_http_rejection(exc):
 
 
 def main():
-    st.set_page_config(page_title="TripRadar", page_icon="🧳")
-    st.title("TripRadar")
-    st.caption("Plan a trip with cited guide evidence and explicit pricing/weather limitations.")
+    st.set_page_config(
+        page_title="TripRadar · Plan your next chapter", page_icon="🧳", layout="wide"
+    )
+    welcome()
     base = Settings().api_url
 
     def api(method, path, **kwargs):
@@ -71,20 +136,33 @@ def main():
             st.session_state.pop("pending", None)
             st.session_state.pop("result", None)
             st.rerun()
+        st.subheader("Make the trip yours")
+        st.caption("Choose one city, set your dates and tell us what you would love to discover.")
         with st.form("trip"):
             destination = st.selectbox(
                 "Destination", ["Lisbon", "Paris", "London", "New York City"]
             )
-            start = st.date_input("Start date", date.today() + timedelta(days=7))
-            outbound = st.date_input("Outbound flight date (origin local)", start)
-            end = st.date_input("End date", date.today() + timedelta(days=16))
-            amount = st.number_input("Total trip budget", min_value=1, value=2000)
-            currency = st.selectbox("Currency", ["USD", "EUR", "GBP"])
-            origin = st.selectbox(
-                "Exact departure airport", ["JFK", "EWR", "LHR", "LGW", "CDG", "ORY", "LIS"]
-            )
-            adults = st.number_input("Adults", min_value=1, max_value=8, value=1)
-            rooms = st.number_input("Rooms", min_value=1, max_value=4, value=1)
+            dates = st.columns(3)
+            with dates[0]:
+                start = st.date_input("Start date", date.today() + timedelta(days=7))
+            with dates[1]:
+                outbound = st.date_input("Outbound flight date (origin local)", start)
+            with dates[2]:
+                end = st.date_input("End date", date.today() + timedelta(days=16))
+            costs = st.columns(3)
+            with costs[0]:
+                amount = st.number_input("Total trip budget", min_value=1, value=2000)
+            with costs[1]:
+                currency = st.selectbox("Currency", ["USD", "EUR", "GBP"])
+            with costs[2]:
+                origin = st.selectbox(
+                    "Exact departure airport", ["JFK", "EWR", "LHR", "LGW", "CDG", "ORY", "LIS"]
+                )
+            party = st.columns(2)
+            with party[0]:
+                adults = st.number_input("Adults", min_value=1, max_value=8, value=1)
+            with party[1]:
+                rooms = st.number_input("Rooms", min_value=1, max_value=4, value=1)
             message = st.text_area("Request / interests", "Please plan a trip using these details.")
             st.caption(
                 "Optional allowances are whole-trip amounts for all travelers, in the selected currency. Leave unapproved costs unknown."
@@ -101,7 +179,7 @@ def main():
                 )
             }
             submitted = st.form_submit_button(
-                "Plan trip", disabled="pending" in st.session_state or not ready
+                "Build my trip", type="primary", disabled="pending" in st.session_state or not ready
             )
         if submitted:
             # Retain ID/payload across a network retry to avoid duplicate paid requests.
@@ -144,6 +222,7 @@ def main():
                         st.rerun()
                 result = st.session_state.get("result")
                 if result:
+                    st.subheader("Your trip, day by day")
                     st.write(result["answer"])
                     for day in result.get("days", []):
                         st.subheader(day["date"])
